@@ -9,11 +9,11 @@ A personal portfolio website built with <strong>HTML5</strong>, <strong>Tailwind
 Designed to showcase my projects, skills, certifications, and front-end development journey.
 </p>
 
-<img src="./assets/gif/portfolio-demo.gif" alt="Portfolio Demo"/>
+<img src="./assets/gif/portfolio-demo.gif" alt="Portfolio Demo" width="900"/>
 
 <br><br>
 
-<a href="#">
+<a href="https://ahmedmohammed52.github.io/portfolio/" target="_blank">
     <img src="https://img.shields.io/badge/🌐_Live_Demo-0ea5e9?style=for-the-badge" />
 </a>
 
@@ -32,8 +32,6 @@ Designed to showcase my projects, skills, certifications, and front-end developm
 <img src="https://img.shields.io/badge/Responsive-YES-success?style=for-the-badge"/>
 
 <img src="https://img.shields.io/badge/Dark_Mode-Available-black?style=for-the-badge"/>
-
-<img src="https://img.shields.io/badge/License-MIT-blue?style=for-the-badge"/>
 
 </div>
 
@@ -109,21 +107,18 @@ Everything was built from scratch using HTML5, Tailwind CSS, and Vanilla JavaScr
 
 # 📸 Screenshots
 
-## Desktop
+<p align="center">
 
-<img src="./assets/screenshots/desktop.png"/>
+<img src="./assets/screenshots/desktop.png" width="70%">
 
----
+</p>
 
-## Tablet
+<p align="center">
 
-<img src="./assets/screenshots/tablet.png"/>
+<img src="./assets/screenshots/tablet.png" width="20%">
+<img src="./assets/screenshots/mobile.png" width="10%">
 
----
-
-## Mobile
-
-<img src="./assets/screenshots/mobile.png"/>
+</p>
 
 ---
 
@@ -146,14 +141,22 @@ Everything was built from scratch using HTML5, Tailwind CSS, and Vanilla JavaScr
 Portfolio
 │
 ├── assets
-│ ├── css
-│ ├── js
-│ ├── images
-│ ├── screenshots
-│ └── gif
+│   ├── cv
+│   ├── gif
+│   ├── images
+│   └── screenshots
+│
+├── dist
+│   └── output.css
+│
+├── src
+│   ├── input.css
+│   └── js
+│       └── main.js
 │
 ├── index.html
-├── README.md
+├── package.json
+└── README.md
 
 ```
 
@@ -259,9 +262,16 @@ Front-End Developer
 
 📍 Qena, Egypt
 
-📧 amohammed147258@gmail.com
+📧 amoa220504@gmail.com
 
 ---
+
+### Connect with Me
+
+- 🌐 Portfolio: https://ahmedmohammed52.github.io/portfolio/
+- 💼 LinkedIn: https://www.linkedin.com/in/ahmed-mohammed-99a121267/
+- 💻 GitHub: https://github.com/AhmedMohammed52
+- 📧 Email: amoa220504@gmail.com
 
 # ⭐ If you like this project
 
