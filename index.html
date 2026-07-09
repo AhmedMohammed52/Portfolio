@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ar" dir="rtl" class="scroll-smooth">
+<html lang="ar" dir="rtl" class="scroll-smooth overflow-x-hidden">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -69,7 +69,7 @@
   </head>
 
   <body
-    class="bg-linear-to-br from-slate-100 via-slate-50 to-slate-100 dark:from-slate-950 dark:via-slate-900 dark:to-slate-950 dark:text-white font-tajawal"
+    class="bg-linear-to-br from-slate-100 via-slate-50 to-slate-100 dark:from-slate-950 dark:via-slate-900 dark:to-slate-950 dark:text-white font-tajawal overflow-x-hidden"
   >
     <nav
       class="fixed top-0 left-0 right-0 z-50 bg-white/95 border-b border-b-slate-200 shadow-sm dark:bg-slate-950/95 dark:shadow-none dark:border-slate-800"
@@ -164,6 +164,7 @@
       </div>
     </nav>
 
+    <!-- Mobile Menu -->
     <div
       class="md:hidden flex flex-col items-center gap-4.5 fixed top-20 md:top-26 left-0 right-0 p-6 bg-white/95 border-b-slate-200 dark:bg-slate-950/95 dark:shadow-none dark:border-slate-800 border-b dark:border-b-[#94a3b833] backdrop-blur-[10px] translate-x-full transition-transform duration-300 ease-in-out shadow-[0_10px_30px_#0000004d] cursor-pointer z-99"
       id="mobile-menu"
@@ -219,211 +220,6 @@
           ></i>
         </span>
       </button>
-    </div>
-
-    <button
-      class="w-12 h-12 flex justify-center items-center fixed top-1/2 right-0 bg-white/90 dark:bg-slate-900/90 hover:bg-slate-50 dark:hover:bg-slate-800 border border-r-0 border-slate-200 dark:border-slate-700 rounded-l-xl backdrop-blur-md shadow-lg z-70 cursor-pointer transition-all duration-300 group"
-      id="open-setting"
-    >
-      <i
-        class="fa-solid fa-gear text-xl text-slate-600 dark:text-slate-200 duration-300 transition-all group-hover:rotate-90"
-      ></i>
-    </button>
-
-    <!-- Sidebar -->
-    <div
-      class="h-full w-80 bg-white/95 dark:bg-slate-900/95 border-l border-slate-200 dark:border-slate-800 fixed right-0 top-0 z-60 duration-300 transition-transform translate-x-full shadow-2xl backdrop-blur-xl"
-      id="sidebar"
-    >
-      <div class="h-full flex flex-col">
-        <div
-          class="p-6 flex justify-between items-center border-b border-slate-200 dark:border-slate-800"
-        >
-          <div class="flex items-center gap-2">
-            <i class="fa-solid fa-sliders text-xl text-primary"></i>
-
-            <h3 class="text-xl font-bold dark:text-white">تخصيص المظهر</h3>
-          </div>
-
-          <button
-            class="w-8 h-8 rounded-full bg-slate-100 dark:bg-slate-800 flex justify-center items-center hover:bg-slate-200 dark:hover:bg-slate-700 duration-300 transition-all cursor-pointer group"
-            id="close-setting"
-          >
-            <i
-              class="fa-solid fa-x text-sm text-slate-400 duration-300 group-hover:text-primary"
-            ></i>
-          </button>
-        </div>
-
-        <div class="p-6 flex-1 overflow-y-auto space-y-8">
-          <div
-            class="pb-8 mb-6 border-b border-slate-200 dark:border-slate-800"
-          >
-            <h4
-              class="text-sm font-bold mb-4 uppercase text-slate-500 dark:text-slate-400 flex items-center gap-2"
-            >
-              <i class="fa-solid fa-font text-xs"></i>
-
-              نوع الخط
-            </h4>
-
-            <div class="flex flex-col gap-4">
-              <button
-                class="font-option relative w-full rounded-xl p-4 flex justify-between items-center border border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800/50 hover:border-primary/50 text-right cursor-pointer transition-all group"
-                data-font="alexandria"
-              >
-                <div class="font-alexandria">
-                  <span
-                    class="mb-1 block text-lg font-bold text-slate-800 dark:text-slate-200 group-hover:text-primary transition-colors"
-                  >
-                    Alexandria
-                  </span>
-
-                  <span class="text-xs text-slate-400">Alexandria</span>
-                </div>
-              </button>
-
-              <button
-                class="font-option active relative w-full rounded-xl p-4 flex justify-between items-center border border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800/50 hover:border-primary/50 text-right cursor-pointer transition-all group"
-                data-font="tajawal"
-              >
-                <div class="font-tajawal">
-                  <span
-                    class="mb-1 block text-lg font-bold text-slate-800 dark:text-slate-200 group-hover:text-primary transition-colors"
-                  >
-                    Tajawal
-                  </span>
-
-                  <span class="text-xs text-slate-400">الخط الافتراضي</span>
-                </div>
-              </button>
-
-              <button
-                class="font-option relative w-full rounded-xl p-4 flex justify-between items-center border border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800/50 hover:border-primary/50 text-right cursor-pointer transition-all group"
-                data-font="cairo"
-              >
-                <div class="font-cairo">
-                  <span
-                    class="mb-1 block text-lg font-bold text-slate-800 dark:text-slate-200 group-hover:text-primary transition-colors"
-                  >
-                    Cairo
-                  </span>
-
-                  <span class="text-xs text-slate-400">Cairo</span>
-                </div>
-              </button>
-            </div>
-          </div>
-
-          <div class="theme-colors">
-            <h4
-              class="text-sm font-bold mb-4 uppercase text-slate-500 dark:text-slate-400 flex items-center gap-2"
-            >
-              <i class="fa-solid fa-palette text-xs"></i>
-
-              لون الثيم
-            </h4>
-
-            <div class="grid grid-cols-4 gap-4">
-              <button
-                class="active w-12 h-12 p-1 rounded-full border-2 border-slate-200 dark:border-slate-700 hover:border-primary shadow-sm duration-300 transition-transform hover:scale-110 cursor-pointer"
-                style="
-                  background: linear-gradient(
-                    135deg,
-                    rgb(99, 102, 241),
-                    rgb(139, 92, 246)
-                  );
-                "
-                data-theme="purple-blue"
-                data-primary="rgb(99, 102, 241)"
-                data-secondary="rgb(139, 92, 246)"
-              ></button>
-
-              <button
-                class="w-12 h-12 p-1 rounded-full border-2 border-slate-200 dark:border-slate-700 hover:border-primary shadow-sm duration-300 transition-transform hover:scale-110 cursor-pointer"
-                style="
-                  background: linear-gradient(
-                    135deg,
-                    rgb(236, 72, 153),
-                    rgb(249, 115, 22)
-                  );
-                "
-                data-primary="rgb(236, 72, 153)"
-                data-secondary="rgb(249, 115, 22)"
-                data-theme="pink-orange"
-              ></button>
-
-              <button
-                class="w-12 h-12 p-1 rounded-full border-2 border-slate-200 dark:border-slate-700 hover:border-primary shadow-sm duration-300 transition-transform hover:scale-110 cursor-pointer"
-                style="
-                  background: linear-gradient(
-                    135deg,
-                    rgb(16, 185, 129),
-                    rgb(5, 150, 105)
-                  );
-                "
-                data-primary="rgb(16, 185, 129)"
-                data-secondary="rgb(5, 150, 105)"
-                data-theme="green-emerald"
-              ></button>
-
-              <button
-                class="w-12 h-12 p-1 rounded-full border-2 border-slate-200 dark:border-slate-700 hover:border-primary shadow-sm duration-300 transition-transform hover:scale-110 cursor-pointer"
-                style="
-                  background: linear-gradient(
-                    135deg,
-                    rgb(59, 130, 246),
-                    rgb(6, 182, 212)
-                  );
-                "
-                data-primary="rgb(59, 130, 246)"
-                data-secondary="rgb(6, 182, 212)"
-                data-theme="blue-cyan"
-              ></button>
-
-              <button
-                class="w-12 h-12 p-1 rounded-full border-2 border-slate-200 dark:border-slate-700 hover:border-primary shadow-sm duration-300 transition-transform hover:scale-110 cursor-pointer"
-                style="
-                  background: linear-gradient(
-                    135deg,
-                    rgb(239, 68, 68),
-                    rgb(244, 63, 94)
-                  );
-                "
-                data-primary="rgb(239, 68, 68)"
-                data-secondary="rgb(244, 63, 94)"
-                data-theme="red-rose"
-              ></button>
-
-              <button
-                class="w-12 h-12 p-1 rounded-full border-2 border-slate-200 dark:border-slate-700 hover:border-primary shadow-sm duration-300 transition-transform hover:scale-110 cursor-pointer"
-                style="
-                  background: linear-gradient(
-                    135deg,
-                    rgb(245, 158, 11),
-                    rgb(234, 88, 12)
-                  );
-                "
-                data-primary="rgb(245, 158, 11)"
-                data-secondary="rgb(234, 88, 12)"
-                data-theme="amber-orange"
-              ></button>
-            </div>
-          </div>
-        </div>
-
-        <div
-          class="p-6 border-t border-slate-200 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-900/50"
-        >
-          <button
-            class="w-full py-3 px-4 rounded-xl bg-slate-200 dark:bg-slate-800 text-slate-600 dark:text-slate-400 font-bold hover:bg-red-500 hover:text-white dark:hover:bg-red-600 duration-300 transition-all cursor-pointer flex justify-center items-center gap-2"
-            id="reset-settings"
-          >
-            <i class="fa-solid fa-arrow-rotate-right text-sm"></i>
-            إعادة الضبط
-          </button>
-        </div>
-      </div>
     </div>
 
     <main>
@@ -604,7 +400,7 @@
                 ></div>
 
                 <div
-                  class="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden bg-slate-200 dark:bg-slate-800 border-4 border-white dark:border-slate-900"
+                  class="relative w-44 h-44 lg:w-80 lg:h-80 rounded-full overflow-hidden bg-slate-200 dark:bg-slate-800 border-4 border-white dark:border-slate-900"
                 >
                   <img
                     src="./assets/images/Ahmed-Mohammed.png"
@@ -614,44 +410,44 @@
                 </div>
 
                 <div
-                  class="py-3 px-2 rounded-2xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-xl absolute -top-4 -right-4 animate-bounce"
+                  class="py-2 px-1.5 md:py-3 md:px-2 rounded-xl md:rounded-2xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-xl absolute -top-4 -right-4 animate-bounce"
                   style="animation-duration: 3s"
                 >
-                  <i class="fa-brands fa-react text-3xl text-[#61DAFB]"></i>
+                  <i class="fa-brands fa-react text-xl md:text-3xl text-[#61DAFB]"></i>
                 </div>
 
                 <div
-                  class="py-4 px-2 rounded-2xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-xl absolute top-1/4 -left-6 animate-bounce"
+                  class="py-2.5 px-1.5 md:py-4 md:px-2 rounded-xl md:rounded-2xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-xl absolute top-1/4 -left-6 animate-bounce"
                   style="animation-duration: 2.5s; animation-delay: 0.5s"
                 >
-                  <i class="fa-brands fa-vuejs text-3xl text-[#4FC08D]"></i>
+                  <i class="fa-brands fa-vuejs text-xl md:text-3xl text-[#4FC08D]"></i>
                 </div>
 
                 <div
-                  class="py-3.5 px-1.5 rounded-2xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-xl absolute -bottom-4 -right-4 animate-bounce"
+                  class="py-2.5 px-1.5 md:py-3.5 md:px-1.5 rounded-xl  md:rounded-2xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-xl absolute -bottom-4 -right-4 animate-bounce"
                   style="animation-duration: 3.5s; animation-delay: 1s"
                 >
-                  <i class="fa-brands fa-figma text-3xl text-[#F24E1E]"></i>
+                  <i class="fa-brands fa-figma text-xl md:text-3xl text-[#F24E1E]"></i>
                 </div>
 
                 <div
-                  class="p-3 rounded-2xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-xl absolute -left-6 bottom-1/4 animate-bounce"
+                  class="p-1.5 md:p-3 rounded-xl md:rounded-2xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-xl absolute -left-6 bottom-1/4 animate-bounce"
                   style="animation-duration: 2s; animation-delay: 1.5s"
                 >
-                  <i class="fa-solid fa-code text-3xl text-primary"></i>
+                  <i class="fa-solid fa-code text-xl md:text-3xl text-primary"></i>
                 </div>
               </div>
 
               <div class="absolute inset-0 flex justify-center items-center">
                 <div
-                  class="absolute w-100 h-100 md:w-112.5 md:h-112.5 rounded-full border-2 border-dashed border-primary/30 animate-spin"
+                  class="absolute w-86 h-86 lg:w-120 lg:h-120 rounded-full border-2 border-dashed border-primary/30 animate-spin"
                   style="animation-duration: 30s"
                 ></div>
               </div>
 
               <div class="absolute inset-0 flex justify-center items-center">
                 <div
-                  class="absolute w-87 h-87 md:w-95 md:h-95 rounded-full border-2 border-secondary/20 animate-spin"
+                  class="absolute w-64 h-64 lg:w-96 lg:h-96 rounded-full border-2 border-secondary/20 animate-spin"
                   style="animation-duration: 20s; animation-direction: reverse"
                 ></div>
               </div>
@@ -949,19 +745,19 @@
                 </a>
 
                 <a
-                  href="mailto:amoa220504@gmail.com?subject=استفسار&body=مرحباً، أود معرفة تفاصيل أكثر عن..."
-                  class="w-12 h-12 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl flex items-center justify-center duration-300 transition-all hover:text-white hover:bg-[#EA4C89]"
-                >
-                  <i class="fa-solid fa-envelope text-xl"></i>
-                </a>
-
-                <a
                   href="https://wa.me/201090695824"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="w-12 h-12 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl flex items-center justify-center duration-300 transition-all hover:text-white hover:bg-green-400"
                 >
                   <i class="fa-brands fa-whatsapp text-xl"></i>
+                </a>
+
+                <a
+                  href="mailto:amoa220504@gmail.com?subject=استفسار&body=مرحباً، أود معرفة تفاصيل أكثر عن..."
+                  class="w-12 h-12 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl flex items-center justify-center duration-300 transition-all hover:text-white hover:bg-[#EA4C89]"
+                >
+                  <i class="fa-solid fa-envelope text-xl"></i>
                 </a>
               </div>
             </div>
@@ -2790,27 +2586,22 @@
                     </a>
 
                     <a
-                      href=""
+                      href="https://wa.me/201090695824"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       class="w-14 h-14 rounded-2xl bg-slate-200 dark:bg-slate-800 flex justify-center items-center transition-all duration-300 hover:bg-primary transform hover:scale-110 group"
                     >
                       <i
-                        class="fa-brands fa-twitter text-2xl text-slate-700 dark:text-white group-hover:text-white"
+                        class="fa-brands fa-whatsapp text-2xl text-slate-700 dark:text-white group-hover:text-white"
                       ></i>
                     </a>
+
                     <a
-                      href=""
+                      href="mailto:amoa220504@gmail.com?subject=استفسار&body=مرحباً، أود معرفة تفاصيل أكثر عن..."
                       class="w-14 h-14 rounded-2xl bg-slate-200 dark:bg-slate-800 flex justify-center items-center transition-all duration-300 hover:bg-primary transform hover:scale-110 group"
                     >
                       <i
-                        class="fa-brands fa-dribbble text-2xl text-slate-700 dark:text-white group-hover:text-white"
-                      ></i>
-                    </a>
-                    <a
-                      href=""
-                      class="w-14 h-14 rounded-2xl bg-slate-200 dark:bg-slate-800 flex justify-center items-center transition-all duration-300 hover:bg-primary transform hover:scale-110 group"
-                    >
-                      <i
-                        class="fa-brands fa-behance text-2xl text-slate-700 dark:text-white group-hover:text-white"
+                        class="fa-solid fa-envelope text-2xl text-slate-700 dark:text-white group-hover:text-white"
                       ></i>
                     </a>
                   </div>
@@ -3007,8 +2798,211 @@
           </div>
         </div>
       </section>
+
+      <footer
+        class="bg-slate-100 dark:bg-slate-950 py-16 px-4 md:px-8 border-t border-slate-200 dark:border-slate-800"
+        id="footer"
+      >
+        <div class="container mx-auto max-w-7xl">
+          <div class="grid grid-cols-1 md:grid-cols-4 mb-12 gap-12">
+            <div class="col-span-1 md:col-span-2">
+              <div class="flex items-center gap-3 mb-6">
+                <div
+                  class="w-9 h-9 md:w-12 md:h-12 rounded-md md:rounded-lg flex justify-center items-center bg-linear-to-br from-primary to-secondary"
+                >
+                  <i class="fa-solid fa-code text-white text-sm md:text-xl"></i>
+                </div>
+
+                <span
+                  class="text-lg md:text-2xl font-bold bg-linear-to-r from-primary to-secondary bg-clip-text text-transparent"
+                  >أحمد محمد
+                </span>
+              </div>
+
+              <p
+                class="text-slate-500 dark:text-slate-400 text-lg mb-8 leading-relaxed"
+              >
+                أؤمن بأن البرمجة فن. هدفي مش بس كتابة كود، بل خلق تجربة مستخدم
+                سلسة بتسيب أثر. بدمج التصميم الجمالي مع الأداء القوي عشان أقدم
+                منتج نهائي متكامل.
+              </p>
+
+              <div>
+                <a
+                  href="./assets/cv/Ahmed_Mohammed_Resume.pdf"
+                  download="Ahmed_Mohammed_Resume.pdf"
+                  class="inline-flex items-center gap-4 px-5 py-4 border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 rounded-xl transition-all duration-300 group hover:border-primary hover:shadow-lg hover:-translate-y-1 w-full md:w-auto"
+                >
+                  <div
+                    class="w-12 h-12 rounded-lg flex items-center justify-center bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white duration-300 transition-colors"
+                  >
+                    <i class="fa-solid fa-file-download text-xl"></i>
+                  </div>
+
+                  <div class="text-right">
+                    <span
+                      class="block text-xs text-slate-500 dark:text-slate-400 mb-1"
+                      >تعرف علي خبراتي</span
+                    >
+
+                    <span
+                      class="block text-slate-800 dark:text-white font-bold text-lg"
+                      >حمل السيرة الذاتية (CV)</span
+                    >
+                  </div>
+
+                  <i
+                    class="fa-solid fa-arrow-left text-slate-300 mr-auto group-hover:text-primary transition-colors"
+                  ></i>
+                </a>
+
+                <div class="flex items-center gap-3 px-2 mt-6">
+                  <span class="relative h-3 w-3 flex">
+                    <span
+                      class="animate-ping absolute inline-flex h-full w-full bg-emerald-400 opacity-75 rounded-full"
+                    ></span>
+
+                    <span
+                      class="relative inline-flex w-3 h-3 bg-emerald-500 rounded-full"
+                    ></span>
+                  </span>
+
+                  <p class="text-sm text-slate-500 dark:text-slate-400">
+                    أعمل حالياً على:
+                    <span
+                      class="font-bold text-slate-700 dark:text-white border-b-2 border-emerald-500/30"
+                    >
+                      بناء متجر إلكتروني احترافي
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="text-xl font-bold mb-6">روابط سريعة</h3>
+
+              <ul class="space-y-3">
+                <li>
+                  <a
+                    href="#hero"
+                    class="text-slate-500 dark:text-slate-400 hover:text-primary transition-colors text-lg"
+                    >الرئيسية</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href="#about"
+                    class="text-slate-500 dark:text-slate-400 hover:text-primary transition-colors text-lg"
+                    >عني</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href="#portfolio"
+                    class="text-slate-500 dark:text-slate-400 hover:text-primary transition-colors text-lg"
+                  >
+                    الأعمال</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href="#experience"
+                    class="text-slate-500 dark:text-slate-400 hover:text-primary transition-colors text-lg"
+                    >الخبرة</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href="#testimonials"
+                    class="text-slate-500 dark:text-slate-400 hover:text-primary transition-colors text-lg"
+                    >التوصيات
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="#contact"
+                    class="text-slate-500 dark:text-slate-400 hover:text-primary transition-colors text-lg"
+                    >تواصل
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 class="text-xl font-bold mb-6">الخدمات</h3>
+
+              <ul class="space-y-3">
+                <li>
+                  <a
+                    href="#"
+                    class="text-slate-500 dark:text-slate-400 hover:text-primary transition-colors text-lg"
+                    >تطوير الويب</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    class="text-slate-500 dark:text-slate-400 hover:text-primary transition-colors text-lg"
+                    >تطوير التطبيقات</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    class="text-slate-500 dark:text-slate-400 hover:text-primary transition-colors text-lg"
+                    >تصميم UI/UX</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    class="text-slate-500 dark:text-slate-400 hover:text-primary transition-colors text-lg"
+                    >الاستشارات التقنية</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    class="text-slate-500 dark:text-slate-400 hover:text-primary transition-colors text-lg"
+                    >تحسين الأداء</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    class="text-slate-500 dark:text-slate-400 hover:text-primary transition-colors text-lg"
+                    >الصيانة والدعم</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="border-t border-slate-200 dark:border-slate-800 pt-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+              <p
+                class="text-slate-500 dark:text-slate-400 text-lg mb-4 md:mb-0"
+              >
+                © 2026 أحمد محمد. جميع الحقوق محفوظة.
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
     </main>
 
+    <!-- Scroll To Top Button -->
     <button
       class="hidden fixed left-8 bottom-8 w-14 h-14 rounded-full flex justify-center items-center bg-linear-to-br from-primary to-accent hover:from-secondary hover:to-primary text-white shadow-lg hover:shadow-2xl hover:shadow-primary/50 duration-300 cursor-pointer transition-all hover:scale-110 group z-50 opacity-100 visible"
       id="back-to-top"
@@ -3018,205 +3012,210 @@
       ></i>
     </button>
 
-    <footer
-      class="bg-slate-100 dark:bg-slate-950 py-16 px-4 md:px-8 border-t border-slate-200 dark:border-slate-800"
-      id="footer"
+    <!-- Sidebar -->
+    <button
+      class="w-12 h-12 flex justify-center items-center fixed top-1/2 right-0 bg-white/90 dark:bg-slate-900/90 hover:bg-slate-50 dark:hover:bg-slate-800 border border-r-0 border-slate-200 dark:border-slate-700 rounded-l-xl backdrop-blur-md shadow-lg z-70 cursor-pointer transition-all duration-300 group"
+      id="open-setting"
     >
-      <div class="container mx-auto max-w-7xl">
-        <div class="grid grid-cols-1 md:grid-cols-4 mb-12 gap-12">
-          <div class="col-span-1 md:col-span-2">
-            <div class="flex items-center gap-3 mb-6">
-              <div
-                class="w-9 h-9 md:w-12 md:h-12 rounded-md md:rounded-lg flex justify-center items-center bg-linear-to-br from-primary to-secondary"
-              >
-                <i class="fa-solid fa-code text-white text-sm md:text-xl"></i>
-              </div>
+      <i
+        class="fa-solid fa-gear text-xl text-slate-600 dark:text-slate-200 duration-300 transition-all group-hover:rotate-90"
+      ></i>
+    </button>
 
-              <span
-                class="text-lg md:text-2xl font-bold bg-linear-to-r from-primary to-secondary bg-clip-text text-transparent"
-                >أحمد محمد
-              </span>
-            </div>
+    <div
+      class="h-full w-80 bg-white/95 dark:bg-slate-900/95 border-l border-slate-200 dark:border-slate-800 fixed right-0 top-0 z-60 duration-300 transition-transform translate-x-full shadow-2xl backdrop-blur-xl"
+      id="sidebar"
+    >
+      <div class="h-full flex flex-col">
+        <div
+          class="p-6 flex justify-between items-center border-b border-slate-200 dark:border-slate-800"
+        >
+          <div class="flex items-center gap-2">
+            <i class="fa-solid fa-sliders text-xl text-primary"></i>
 
-            <p
-              class="text-slate-500 dark:text-slate-400 text-lg mb-8 leading-relaxed"
+            <h3 class="text-xl font-bold dark:text-white">تخصيص المظهر</h3>
+          </div>
+
+          <button
+            class="w-8 h-8 rounded-full bg-slate-100 dark:bg-slate-800 flex justify-center items-center hover:bg-slate-200 dark:hover:bg-slate-700 duration-300 transition-all cursor-pointer group"
+            id="close-setting"
+          >
+            <i
+              class="fa-solid fa-x text-sm text-slate-400 duration-300 group-hover:text-primary"
+            ></i>
+          </button>
+        </div>
+
+        <div class="p-6 flex-1 overflow-y-auto space-y-8">
+          <div
+            class="pb-8 mb-6 border-b border-slate-200 dark:border-slate-800"
+          >
+            <h4
+              class="text-sm font-bold mb-4 uppercase text-slate-500 dark:text-slate-400 flex items-center gap-2"
             >
-              أؤمن بأن البرمجة فن. هدفي مش بس كتابة كود، بل خلق تجربة مستخدم
-              سلسة بتسيب أثر. بدمج التصميم الجمالي مع الأداء القوي عشان أقدم
-              منتج نهائي متكامل.
-            </p>
+              <i class="fa-solid fa-font text-xs"></i>
 
-            <div>
-              <a
-                href="./assets/cv/Ahmed_Mohammed_Resume.pdf"
-                download="Ahmed_Mohammed_Resume.pdf"
-                class="inline-flex items-center gap-4 px-5 py-4 border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 rounded-xl transition-all duration-300 group hover:border-primary hover:shadow-lg hover:-translate-y-1 w-full md:w-auto"
+              نوع الخط
+            </h4>
+
+            <div class="flex flex-col gap-4">
+              <button
+                class="font-option relative w-full rounded-xl p-4 flex justify-between items-center border border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800/50 hover:border-primary/50 text-right cursor-pointer transition-all group"
+                data-font="alexandria"
               >
-                <div
-                  class="w-12 h-12 rounded-lg flex items-center justify-center bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white duration-300 transition-colors"
-                >
-                  <i class="fa-solid fa-file-download text-xl"></i>
-                </div>
-
-                <div class="text-right">
+                <div class="font-alexandria">
                   <span
-                    class="block text-xs text-slate-500 dark:text-slate-400 mb-1"
-                    >تعرف علي خبراتي</span
+                    class="mb-1 block text-lg font-bold text-slate-800 dark:text-slate-200 group-hover:text-primary transition-colors"
                   >
-
-                  <span
-                    class="block text-slate-800 dark:text-white font-bold text-lg"
-                    >حمل السيرة الذاتية (CV)</span
-                  >
-                </div>
-
-                <i
-                  class="fa-solid fa-arrow-left text-slate-300 mr-auto group-hover:text-primary transition-colors"
-                ></i>
-              </a>
-
-              <div class="flex items-center gap-3 px-2 mt-6">
-                <span class="relative h-3 w-3 flex">
-                  <span
-                    class="animate-ping absolute inline-flex h-full w-full bg-emerald-400 opacity-75 rounded-full"
-                  ></span>
-
-                  <span
-                    class="relative inline-flex w-3 h-3 bg-emerald-500 rounded-full"
-                  ></span>
-                </span>
-
-                <p class="text-sm text-slate-500 dark:text-slate-400">
-                  أعمل حالياً على:
-                  <span
-                    class="font-bold text-slate-700 dark:text-white border-b-2 border-emerald-500/30"
-                  >
-                    بناء متجر إلكتروني احترافي
+                    Alexandria
                   </span>
-                </p>
-              </div>
+
+                  <span class="text-xs text-slate-400">Alexandria</span>
+                </div>
+              </button>
+
+              <button
+                class="font-option active relative w-full rounded-xl p-4 flex justify-between items-center border border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800/50 hover:border-primary/50 text-right cursor-pointer transition-all group"
+                data-font="tajawal"
+              >
+                <div class="font-tajawal">
+                  <span
+                    class="mb-1 block text-lg font-bold text-slate-800 dark:text-slate-200 group-hover:text-primary transition-colors"
+                  >
+                    Tajawal
+                  </span>
+
+                  <span class="text-xs text-slate-400">الخط الافتراضي</span>
+                </div>
+              </button>
+
+              <button
+                class="font-option relative w-full rounded-xl p-4 flex justify-between items-center border border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800/50 hover:border-primary/50 text-right cursor-pointer transition-all group"
+                data-font="cairo"
+              >
+                <div class="font-cairo">
+                  <span
+                    class="mb-1 block text-lg font-bold text-slate-800 dark:text-slate-200 group-hover:text-primary transition-colors"
+                  >
+                    Cairo
+                  </span>
+
+                  <span class="text-xs text-slate-400">Cairo</span>
+                </div>
+              </button>
             </div>
           </div>
 
-          <div>
-            <h3 class="text-xl font-bold mb-6">روابط سريعة</h3>
+          <div class="theme-colors">
+            <h4
+              class="text-sm font-bold mb-4 uppercase text-slate-500 dark:text-slate-400 flex items-center gap-2"
+            >
+              <i class="fa-solid fa-palette text-xs"></i>
 
-            <ul class="space-y-3">
-              <li>
-                <a
-                  href="#hero"
-                  class="text-slate-500 dark:text-slate-400 hover:text-primary transition-colors text-lg"
-                  >الرئيسية</a
-                >
-              </li>
+              لون الثيم
+            </h4>
 
-              <li>
-                <a
-                  href="#about"
-                  class="text-slate-500 dark:text-slate-400 hover:text-primary transition-colors text-lg"
-                  >عني</a
-                >
-              </li>
+            <div class="grid grid-cols-4 gap-4">
+              <button
+                class="active w-12 h-12 p-1 rounded-full border-2 border-slate-200 dark:border-slate-700 hover:border-primary shadow-sm duration-300 transition-transform hover:scale-110 cursor-pointer"
+                style="
+                  background: linear-gradient(
+                    135deg,
+                    rgb(99, 102, 241),
+                    rgb(139, 92, 246)
+                  );
+                "
+                data-theme="purple-blue"
+                data-primary="rgb(99, 102, 241)"
+                data-secondary="rgb(139, 92, 246)"
+              ></button>
 
-              <li>
-                <a
-                  href="#portfolio"
-                  class="text-slate-500 dark:text-slate-400 hover:text-primary transition-colors text-lg"
-                >
-                  الأعمال</a
-                >
-              </li>
+              <button
+                class="w-12 h-12 p-1 rounded-full border-2 border-slate-200 dark:border-slate-700 hover:border-primary shadow-sm duration-300 transition-transform hover:scale-110 cursor-pointer"
+                style="
+                  background: linear-gradient(
+                    135deg,
+                    rgb(236, 72, 153),
+                    rgb(249, 115, 22)
+                  );
+                "
+                data-primary="rgb(236, 72, 153)"
+                data-secondary="rgb(249, 115, 22)"
+                data-theme="pink-orange"
+              ></button>
 
-              <li>
-                <a
-                  href="#experience"
-                  class="text-slate-500 dark:text-slate-400 hover:text-primary transition-colors text-lg"
-                  >الخبرة</a
-                >
-              </li>
+              <button
+                class="w-12 h-12 p-1 rounded-full border-2 border-slate-200 dark:border-slate-700 hover:border-primary shadow-sm duration-300 transition-transform hover:scale-110 cursor-pointer"
+                style="
+                  background: linear-gradient(
+                    135deg,
+                    rgb(16, 185, 129),
+                    rgb(5, 150, 105)
+                  );
+                "
+                data-primary="rgb(16, 185, 129)"
+                data-secondary="rgb(5, 150, 105)"
+                data-theme="green-emerald"
+              ></button>
 
-              <li>
-                <a
-                  href="#testimonials"
-                  class="text-slate-500 dark:text-slate-400 hover:text-primary transition-colors text-lg"
-                  >التوصيات
-                </a>
-              </li>
+              <button
+                class="w-12 h-12 p-1 rounded-full border-2 border-slate-200 dark:border-slate-700 hover:border-primary shadow-sm duration-300 transition-transform hover:scale-110 cursor-pointer"
+                style="
+                  background: linear-gradient(
+                    135deg,
+                    rgb(59, 130, 246),
+                    rgb(6, 182, 212)
+                  );
+                "
+                data-primary="rgb(59, 130, 246)"
+                data-secondary="rgb(6, 182, 212)"
+                data-theme="blue-cyan"
+              ></button>
 
-              <li>
-                <a
-                  href="#contact"
-                  class="text-slate-500 dark:text-slate-400 hover:text-primary transition-colors text-lg"
-                  >تواصل
-                </a>
-              </li>
-            </ul>
-          </div>
+              <button
+                class="w-12 h-12 p-1 rounded-full border-2 border-slate-200 dark:border-slate-700 hover:border-primary shadow-sm duration-300 transition-transform hover:scale-110 cursor-pointer"
+                style="
+                  background: linear-gradient(
+                    135deg,
+                    rgb(239, 68, 68),
+                    rgb(244, 63, 94)
+                  );
+                "
+                data-primary="rgb(239, 68, 68)"
+                data-secondary="rgb(244, 63, 94)"
+                data-theme="red-rose"
+              ></button>
 
-          <div>
-            <h3 class="text-xl font-bold mb-6">الخدمات</h3>
-
-            <ul class="space-y-3">
-              <li>
-                <a
-                  href="#"
-                  class="text-slate-500 dark:text-slate-400 hover:text-primary transition-colors text-lg"
-                  >تطوير الويب</a
-                >
-              </li>
-
-              <li>
-                <a
-                  href="#"
-                  class="text-slate-500 dark:text-slate-400 hover:text-primary transition-colors text-lg"
-                  >تطوير التطبيقات</a
-                >
-              </li>
-
-              <li>
-                <a
-                  href="#"
-                  class="text-slate-500 dark:text-slate-400 hover:text-primary transition-colors text-lg"
-                  >تصميم UI/UX</a
-                >
-              </li>
-
-              <li>
-                <a
-                  href="#"
-                  class="text-slate-500 dark:text-slate-400 hover:text-primary transition-colors text-lg"
-                  >الاستشارات التقنية</a
-                >
-              </li>
-
-              <li>
-                <a
-                  href="#"
-                  class="text-slate-500 dark:text-slate-400 hover:text-primary transition-colors text-lg"
-                  >تحسين الأداء</a
-                >
-              </li>
-
-              <li>
-                <a
-                  href="#"
-                  class="text-slate-500 dark:text-slate-400 hover:text-primary transition-colors text-lg"
-                  >الصيانة والدعم</a
-                >
-              </li>
-            </ul>
+              <button
+                class="w-12 h-12 p-1 rounded-full border-2 border-slate-200 dark:border-slate-700 hover:border-primary shadow-sm duration-300 transition-transform hover:scale-110 cursor-pointer"
+                style="
+                  background: linear-gradient(
+                    135deg,
+                    rgb(245, 158, 11),
+                    rgb(234, 88, 12)
+                  );
+                "
+                data-primary="rgb(245, 158, 11)"
+                data-secondary="rgb(234, 88, 12)"
+                data-theme="amber-orange"
+              ></button>
+            </div>
           </div>
         </div>
 
-        <div class="border-t border-slate-200 dark:border-slate-800 pt-8">
-          <div class="flex flex-col md:flex-row justify-between items-center">
-            <p class="text-slate-500 dark:text-slate-400 text-lg mb-4 md:mb-0">
-              © 2026 أحمد محمد. جميع الحقوق محفوظة.
-            </p>
-          </div>
+        <div
+          class="p-6 border-t border-slate-200 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-900/50"
+        >
+          <button
+            class="w-full py-3 px-4 rounded-xl bg-slate-200 dark:bg-slate-800 text-slate-600 dark:text-slate-400 font-bold hover:bg-red-500 hover:text-white dark:hover:bg-red-600 duration-300 transition-all cursor-pointer flex justify-center items-center gap-2"
+            id="reset-settings"
+          >
+            <i class="fa-solid fa-arrow-rotate-right text-sm"></i>
+            إعادة الضبط
+          </button>
         </div>
       </div>
-    </footer>
+    </div>
 
     <script src="./src/js/main.js"></script>
   </body>
