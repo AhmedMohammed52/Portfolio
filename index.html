@@ -1,0 +1,3223 @@
+<!doctype html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Resource Hints (preconnect includes dns-prefetch) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+
+    <!-- Preload Critical Fonts -->
+    <link
+      rel="preload"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/webfonts/fa-solid-900.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/webfonts/fa-brands-400.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <!-- Font Awesome CSS - Non-render-blocking -->
+    <link
+      rel="preload"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      as="style"
+      onload="
+        this.onload = null;
+        this.rel = 'stylesheet';
+      "
+      crossorigin="anonymous"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        crossorigin="anonymous"
+      />
+    </noscript>
+
+    <!-- Google Fonts - Non-render-blocking -->
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Cairo:wght@200..1000&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+      as="style"
+      onload="
+        this.onload = null;
+        this.rel = 'stylesheet';
+      "
+    />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Cairo:wght@200..1000&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+        rel="stylesheet"
+      />
+    </noscript>
+
+    <link rel="icon" type="image/png" href="./assets/images/favicon.png" />
+    <link rel="stylesheet" href="./dist/output.css" />
+    <link rel="stylesheet" href="./src/input.css" />
+
+    <title>Ahmed Mohammed | Front-End Developer</title>
+  </head>
+
+  <body
+    class="bg-linear-to-br from-slate-100 via-slate-50 to-slate-100 dark:from-slate-950 dark:via-slate-900 dark:to-slate-950 dark:text-white font-tajawal"
+  >
+    <nav
+      class="fixed top-0 left-0 right-0 z-50 bg-white/95 border-b border-b-slate-200 shadow-sm dark:bg-slate-950/95 dark:shadow-none dark:border-slate-800"
+    >
+      <div
+        class="container mx-auto px-4 md:px-8 py-4.25 md:py-5 flex justify-between items-center"
+      >
+        <div class="flex items-center gap-2 md:gap-4">
+          <div
+            class="w-9 h-9 md:w-12 md:h-12 rounded-md md:rounded-lg flex justify-center items-center bg-linear-to-br from-primary to-secondary"
+          >
+            <i class="fa-solid fa-code text-white text-sm md:text-xl"></i>
+          </div>
+
+          <span
+            class="text-lg md:text-2xl font-bold bg-linear-to-r from-primary to-secondary bg-clip-text text-transparent"
+            >أحمد محمد
+          </span>
+        </div>
+
+        <div class="hidden md:flex items-center gap-8" id="desktop-menu">
+          <ul class="flex items-center gap-8">
+            <li>
+              <a
+                href="#hero"
+                class="active text-slate-600 dark:text-slate-300 text-lg hover:text-primary transition-colors duration-300 relative before:absolute before:content-[''] before:w-full before:h-0.5 before:-bottom-2 before:right-0 before:bg-linear-to-l before:from-primary before:to-secondary before:rounded-xs before:transition-transform before:duration-300 before:origin-right"
+                >الرئيسية</a
+              >
+            </li>
+
+            <li>
+              <a
+                href="#about"
+                class="text-slate-600 dark:text-slate-300 text-lg hover:text-primary transition-colors duration-300 relative before:absolute before:content-[''] before:w-full before:h-0.5 before:-bottom-2 before:right-0 before:bg-linear-to-l before:from-primary before:to-secondary before:rounded-xs before:transition-transform before:duration-300 before:origin-right"
+                >عني</a
+              >
+            </li>
+
+            <li>
+              <a
+                href="#portfolio"
+                class="text-slate-600 dark:text-slate-300 text-lg hover:text-primary transition-colors duration-300 relative before:absolute before:content-[''] before:w-full before:h-0.5 before:-bottom-2 before:right-0 before:bg-linear-to-l before:from-primary before:to-secondary before:rounded-xs before:transition-transform before:duration-300 before:origin-right"
+                >الأعمال</a
+              >
+            </li>
+
+            <li>
+              <a
+                href="#experience"
+                class="text-slate-600 dark:text-slate-300 text-lg hover:text-primary transition-colors duration-300 relative before:absolute before:content-[''] before:w-full before:h-0.5 before:-bottom-2 before:right-0 before:bg-linear-to-l before:from-primary before:to-secondary before:rounded-xs before:transition-transform before:duration-300 before:origin-right"
+                >الخبرة</a
+              >
+            </li>
+
+            <li>
+              <a
+                href="#testimonials"
+                class="text-slate-600 dark:text-slate-300 text-lg hover:text-primary transition-colors duration-300 relative before:absolute before:content-[''] before:w-full before:h-0.5 before:-bottom-2 before:right-0 before:bg-linear-to-l before:from-primary before:to-secondary before:rounded-xs before:transition-transform before:duration-300 before:origin-right"
+                >التوصيات</a
+              >
+            </li>
+
+            <li>
+              <a
+                href="#contact"
+                class="text-slate-600 dark:text-slate-300 text-lg hover:text-primary transition-colors duration-300 relative before:absolute before:content-[''] before:w-full before:h-0.5 before:-bottom-2 before:right-0 before:bg-linear-to-l before:from-primary before:to-secondary before:rounded-xs before:transition-transform before:duration-300 before:origin-right"
+                >تواصل</a
+              >
+            </li>
+          </ul>
+
+          <button
+            class="theme-toggle relative w-16 h-8 bg-slate-200 rounded-full transition-all duration-300 hover:ring-2 hover:ring-primary/50 focus:outline-none cursor-pointer"
+          >
+            <span
+              class="absolute left-1 top-1 w-6 h-6 rounded-full bg-white flex justify-center items-center shadow-md transition-transform duration-300"
+            >
+              <i
+                class="fa-solid fa-sun text-amber-500 text-sm transition-all duration-300"
+              ></i>
+
+              <i
+                class="fa-solid fa-moon absolute opacity-0 -rotate-90 scale-0 text-indigo-400 text-sm transition-all duration-300"
+              ></i>
+            </span>
+          </button>
+        </div>
+
+        <div class="block md:hidden" id="menu-toggle">
+          <i class="fa-solid fa-bars text-xl"></i>
+        </div>
+      </div>
+    </nav>
+
+    <div
+      class="md:hidden flex flex-col items-center gap-4.5 fixed top-20 md:top-26 left-0 right-0 p-6 bg-white/95 border-b-slate-200 dark:bg-slate-950/95 dark:shadow-none dark:border-slate-800 border-b dark:border-b-[#94a3b833] backdrop-blur-[10px] translate-x-full transition-transform duration-300 ease-in-out shadow-[0_10px_30px_#0000004d] cursor-pointer z-99"
+      id="mobile-menu"
+    >
+      <a
+        href="#hero"
+        class="relative text-slate-600 dark:text-slate-300 text-sm hover:text-primary hover:bg-[#6366f11a] duration-300 block py-2.25 px-3 rounded-md transition-all before:absolute before:content-[''] before:w-1 before:h-full before:top-0 before:bottom-0 before:-right-1 before:bg-linear-to-l before:from-primary before:to-secondary before:rounded-xs before:transition-transform ease-out before:duration-300 before:origin-right active"
+        >الرئيسية</a
+      >
+
+      <a
+        href="#about"
+        class="relative text-slate-600 dark:text-slate-300 text-sm hover:text-primary hover:bg-[#6366f11a] duration-300 block py-2.25 px-3 rounded-md transition-all before:absolute before:content-[''] before:w-1 before:h-full before:top-0 before:bottom-0 before:-right-1 before:bg-linear-to-l before:from-primary before:to-secondary before:rounded-xs before:transition-transform ease-out before:duration-300 before:origin-right"
+        >عني</a
+      >
+
+      <a
+        href="#portfolio"
+        class="relative text-slate-600 dark:text-slate-300 text-sm hover:text-primary hover:bg-[#6366f11a] duration-300 block py-2.25 px-3 rounded-md transition-all before:absolute before:content-[''] before:w-1 before:h-full before:top-0 before:bottom-0 before:-right-1 before:bg-linear-to-l before:from-primary before:to-secondary before:rounded-xs before:transition-transform ease-out before:duration-300 before:origin-right"
+        >الأعمال</a
+      >
+
+      <a
+        href="#experience"
+        class="relative text-slate-600 dark:text-slate-300 text-sm hover:text-primary hover:bg-[#6366f11a] duration-300 block py-2.25 px-3 rounded-md transition-all before:absolute before:content-[''] before:w-1 before:h-full before:top-0 before:bottom-0 before:-right-1 before:bg-linear-to-l before:from-primary before:to-secondary before:rounded-xs before:transition-transform ease-out before:duration-300 before:origin-right"
+        >الخبرة</a
+      >
+
+      <a
+        href="#testimonials"
+        class="relative text-slate-600 dark:text-slate-300 text-sm hover:text-primary hover:bg-[#6366f11a] duration-300 block py-2.25 px-3 rounded-md transition-all before:absolute before:content-[''] before:w-1 before:h-full before:top-0 before:bottom-0 before:-right-1 before:bg-linear-to-l before:from-primary before:to-secondary before:rounded-xs before:transition-transform ease-out before:duration-300 before:origin-right"
+        >التوصيات</a
+      >
+
+      <a
+        href="#contact"
+        class="relative text-slate-600 dark:text-slate-300 text-sm hover:text-primary hover:bg-[#6366f11a] duration-300 block py-2.25 px-3 rounded-md transition-all before:absolute before:content-[''] before:w-1 before:h-full before:top-0 before:bottom-0 before:-right-1 before:bg-linear-to-l before:from-primary before:to-secondary before:rounded-xs before:transition-transform ease-out before:duration-300 before:origin-right"
+        >تواصل</a
+      >
+
+      <button
+        class="theme-toggle relative w-12 h-6 bg-slate-200 rounded-full transition-all duration-300 hover:ring-2 hover:ring-primary/50 focus:outline-none cursor-pointer"
+      >
+        <span
+          class="absolute left-0.75 top-0.75 w-4.5 h-4.5 rounded-full bg-white flex justify-center items-center shadow-md transition-transform duration-300"
+        >
+          <i
+            class="fa-solid fa-sun text-amber-500 text-[10px] transition-all duration-300"
+          ></i>
+
+          <i
+            class="fa-solid fa-moon text-indigo-400 text-[10px] transition-all duration-300 absolute opacity-0 -rotate-90 scale-0"
+          ></i>
+        </span>
+      </button>
+    </div>
+
+    <button
+      class="w-12 h-12 flex justify-center items-center fixed top-1/2 right-0 bg-white/90 dark:bg-slate-900/90 hover:bg-slate-50 dark:hover:bg-slate-800 border border-r-0 border-slate-200 dark:border-slate-700 rounded-l-xl backdrop-blur-md shadow-lg z-70 cursor-pointer transition-all duration-300 group"
+      id="open-setting"
+    >
+      <i
+        class="fa-solid fa-gear text-xl text-slate-600 dark:text-slate-200 duration-300 transition-all group-hover:rotate-90"
+      ></i>
+    </button>
+
+    <!-- Sidebar -->
+    <div
+      class="h-full w-80 bg-white/95 dark:bg-slate-900/95 border-l border-slate-200 dark:border-slate-800 fixed right-0 top-0 z-60 duration-300 transition-transform translate-x-full shadow-2xl backdrop-blur-xl"
+      id="sidebar"
+    >
+      <div class="h-full flex flex-col">
+        <div
+          class="p-6 flex justify-between items-center border-b border-slate-200 dark:border-slate-800"
+        >
+          <div class="flex items-center gap-2">
+            <i class="fa-solid fa-sliders text-xl text-primary"></i>
+
+            <h3 class="text-xl font-bold dark:text-white">تخصيص المظهر</h3>
+          </div>
+
+          <button
+            class="w-8 h-8 rounded-full bg-slate-100 dark:bg-slate-800 flex justify-center items-center hover:bg-slate-200 dark:hover:bg-slate-700 duration-300 transition-all cursor-pointer group"
+            id="close-setting"
+          >
+            <i
+              class="fa-solid fa-x text-sm text-slate-400 duration-300 group-hover:text-primary"
+            ></i>
+          </button>
+        </div>
+
+        <div class="p-6 flex-1 overflow-y-auto space-y-8">
+          <div
+            class="pb-8 mb-6 border-b border-slate-200 dark:border-slate-800"
+          >
+            <h4
+              class="text-sm font-bold mb-4 uppercase text-slate-500 dark:text-slate-400 flex items-center gap-2"
+            >
+              <i class="fa-solid fa-font text-xs"></i>
+
+              نوع الخط
+            </h4>
+
+            <div class="flex flex-col gap-4">
+              <button
+                class="font-option relative w-full rounded-xl p-4 flex justify-between items-center border border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800/50 hover:border-primary/50 text-right cursor-pointer transition-all group"
+                data-font="alexandria"
+              >
+                <div class="font-alexandria">
+                  <span
+                    class="mb-1 block text-lg font-bold text-slate-800 dark:text-slate-200 group-hover:text-primary transition-colors"
+                  >
+                    Alexandria
+                  </span>
+
+                  <span class="text-xs text-slate-400">Alexandria</span>
+                </div>
+              </button>
+
+              <button
+                class="font-option active relative w-full rounded-xl p-4 flex justify-between items-center border border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800/50 hover:border-primary/50 text-right cursor-pointer transition-all group"
+                data-font="tajawal"
+              >
+                <div class="font-tajawal">
+                  <span
+                    class="mb-1 block text-lg font-bold text-slate-800 dark:text-slate-200 group-hover:text-primary transition-colors"
+                  >
+                    Tajawal
+                  </span>
+
+                  <span class="text-xs text-slate-400">الخط الافتراضي</span>
+                </div>
+              </button>
+
+              <button
+                class="font-option relative w-full rounded-xl p-4 flex justify-between items-center border border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800/50 hover:border-primary/50 text-right cursor-pointer transition-all group"
+                data-font="cairo"
+              >
+                <div class="font-cairo">
+                  <span
+                    class="mb-1 block text-lg font-bold text-slate-800 dark:text-slate-200 group-hover:text-primary transition-colors"
+                  >
+                    Cairo
+                  </span>
+
+                  <span class="text-xs text-slate-400">Cairo</span>
+                </div>
+              </button>
+            </div>
+          </div>
+
+          <div class="theme-colors">
+            <h4
+              class="text-sm font-bold mb-4 uppercase text-slate-500 dark:text-slate-400 flex items-center gap-2"
+            >
+              <i class="fa-solid fa-palette text-xs"></i>
+
+              لون الثيم
+            </h4>
+
+            <div class="grid grid-cols-4 gap-4">
+              <button
+                class="active w-12 h-12 p-1 rounded-full border-2 border-slate-200 dark:border-slate-700 hover:border-primary shadow-sm duration-300 transition-transform hover:scale-110 cursor-pointer"
+                style="
+                  background: linear-gradient(
+                    135deg,
+                    rgb(99, 102, 241),
+                    rgb(139, 92, 246)
+                  );
+                "
+                data-theme="purple-blue"
+                data-primary="rgb(99, 102, 241)"
+                data-secondary="rgb(139, 92, 246)"
+              ></button>
+
+              <button
+                class="w-12 h-12 p-1 rounded-full border-2 border-slate-200 dark:border-slate-700 hover:border-primary shadow-sm duration-300 transition-transform hover:scale-110 cursor-pointer"
+                style="
+                  background: linear-gradient(
+                    135deg,
+                    rgb(236, 72, 153),
+                    rgb(249, 115, 22)
+                  );
+                "
+                data-primary="rgb(236, 72, 153)"
+                data-secondary="rgb(249, 115, 22)"
+                data-theme="pink-orange"
+              ></button>
+
+              <button
+                class="w-12 h-12 p-1 rounded-full border-2 border-slate-200 dark:border-slate-700 hover:border-primary shadow-sm duration-300 transition-transform hover:scale-110 cursor-pointer"
+                style="
+                  background: linear-gradient(
+                    135deg,
+                    rgb(16, 185, 129),
+                    rgb(5, 150, 105)
+                  );
+                "
+                data-primary="rgb(16, 185, 129)"
+                data-secondary="rgb(5, 150, 105)"
+                data-theme="green-emerald"
+              ></button>
+
+              <button
+                class="w-12 h-12 p-1 rounded-full border-2 border-slate-200 dark:border-slate-700 hover:border-primary shadow-sm duration-300 transition-transform hover:scale-110 cursor-pointer"
+                style="
+                  background: linear-gradient(
+                    135deg,
+                    rgb(59, 130, 246),
+                    rgb(6, 182, 212)
+                  );
+                "
+                data-primary="rgb(59, 130, 246)"
+                data-secondary="rgb(6, 182, 212)"
+                data-theme="blue-cyan"
+              ></button>
+
+              <button
+                class="w-12 h-12 p-1 rounded-full border-2 border-slate-200 dark:border-slate-700 hover:border-primary shadow-sm duration-300 transition-transform hover:scale-110 cursor-pointer"
+                style="
+                  background: linear-gradient(
+                    135deg,
+                    rgb(239, 68, 68),
+                    rgb(244, 63, 94)
+                  );
+                "
+                data-primary="rgb(239, 68, 68)"
+                data-secondary="rgb(244, 63, 94)"
+                data-theme="red-rose"
+              ></button>
+
+              <button
+                class="w-12 h-12 p-1 rounded-full border-2 border-slate-200 dark:border-slate-700 hover:border-primary shadow-sm duration-300 transition-transform hover:scale-110 cursor-pointer"
+                style="
+                  background: linear-gradient(
+                    135deg,
+                    rgb(245, 158, 11),
+                    rgb(234, 88, 12)
+                  );
+                "
+                data-primary="rgb(245, 158, 11)"
+                data-secondary="rgb(234, 88, 12)"
+                data-theme="amber-orange"
+              ></button>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="p-6 border-t border-slate-200 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-900/50"
+        >
+          <button
+            class="w-full py-3 px-4 rounded-xl bg-slate-200 dark:bg-slate-800 text-slate-600 dark:text-slate-400 font-bold hover:bg-red-500 hover:text-white dark:hover:bg-red-600 duration-300 transition-all cursor-pointer flex justify-center items-center gap-2"
+            id="reset-settings"
+          >
+            <i class="fa-solid fa-arrow-rotate-right text-sm"></i>
+            إعادة الضبط
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <section
+        class="min-h-screen relative overflow-hidden pt-5 pb-16 md:pt-14 flex items-center"
+        id="hero"
+      >
+        <div
+          class="container mx-auto pt-40 lg:pt-10 px-4 md:px-8 z-10 relative"
+        >
+          <div
+            class="grid grid-cols-1 lg:grid-cols-2 items-center gap-36 lg:gap-16"
+          >
+            <div class="order-2 lg:order-1 text-center lg:text-right">
+              <div
+                class="inline-flex items-center justify-center gap-3 px-5 py-2.5 mb-8 bg-linear-to-l from-emerald-500/10 to-emerald-500/5 dark:from-emerald-500/20 dark:to-emerald-500/10 border border-emerald-500/30 rounded-full backdrop:blur-sm"
+              >
+                <span class="w-2.5 h-2.5 relative flex">
+                  <span
+                    class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"
+                  ></span>
+
+                  <span
+                    class="w-2.5 h-2.5 relative inline-flex rounded-full bg-emerald-500"
+                  ></span>
+                </span>
+
+                <span
+                  class="text-sm font-semibold text-emerald-600 dark:text-emerald-400"
+                >
+                  متاح للشغل الحر
+                </span>
+              </div>
+
+              <div class="mb-8">
+                <p
+                  class="text-xl md:text-2xl font-medium mb-5 text-slate-500 dark:text-slate-400"
+                >
+                  مرحباً، أنا 👋
+                </p>
+
+                <h1
+                  class="text-4xl lg:text-7xl md:text-6xl font-extrabold bg-linear-to-l from-primary via-secondary to-accent bg-clip-text text-transparent pb-4"
+                >
+                  أحمد محمد
+                </h1>
+              </div>
+
+              <div
+                class="inline-flex items-center gap-3 mb-8 px-5 py-2.5 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-full"
+              >
+                <div
+                  class="w-8 h-8 rounded-full bg-linear-to-br from-primary to-secondary flex items-center justify-center"
+                >
+                  <i class="fa-solid fa-code text-white text-sm"></i>
+                </div>
+
+                <span class="text-slate-800 dark:text-white font-bold"
+                  >Frontend Developer
+                </span>
+              </div>
+
+              <p
+                class="text-lg md:text-xl text-slate-600 dark:text-slate-400 mb-10 max-w-xl mx-auto lg:mx-0 lg:mr-0 leading-relaxed"
+              >
+                بحول أفكارك لـ
+                <span class="text-primary font-semibold"
+                  >تجارب رقمية مميزة
+                </span>
+                . متخصص في بناء مواقع وتطبيقات ويب حديثة بأحدث التقنيات.
+              </p>
+
+              <div
+                class="flex flex-wrap justify-center lg:justify-end gap-4 mb-10"
+              >
+                <a
+                  href="#portfolio"
+                  class="inline-flex items-center px-8 py-4 gap-3 text-white bg-linear-to-l from-primary to-secondary hover:from-secondary hover:to-accent text-lg font-bold rounded-2xl duration-300 transition-all cursor-pointer hover:-translate-y-1 group"
+                >
+                  <span>استكشف أعمالي</span>
+
+                  <i
+                    class="fa-solid fa-arrow-left text-lg duration-300 transition-all group-hover:-translate-x-2"
+                  ></i>
+                </a>
+
+                <a
+                  href="#contact"
+                  class="flex items-center px-8 py-4 gap-3 text-slate-800 dark:text-white bg-white dark:bg-slate-800 border-2 border-slate-200 dark:border-slate-700 text-lg font-bold rounded-2xl duration-300 transition-all cursor-pointer hover:border-primary hover:text-primary hover:shadow-lg hover:-translate-y-1 group"
+                >
+                  <span>تواصل معي</span>
+
+                  <i
+                    class="fa-solid fa-paper-plane duration-300 transition-all group-hover:-translate-y-1 group-hover:translate-x-1"
+                  ></i>
+                </a>
+              </div>
+
+              <div class="flex flex-wrap justify-center lg:justify-end gap-2">
+                <div
+                  class="bg-white dark:bg-slate-800 text-slate-800 dark:text-slate-200 border border-slate-200 dark:border-slate-700 rounded-xl py-3.5 px-4 flex items-center gap-2 shadow-sm transition-all duration-300 hover:shadow-md hover:border-[#61DAFB] group"
+                >
+                  <i
+                    class="fa-brands fa-react text-xl transition-transform duration-500 group-hover:rotate-180 text-[#61DAFB]"
+                  ></i>
+
+                  <span
+                    class="text-sm font-semibold text-slate-700 dark:text-slate-300"
+                    >React</span
+                  >
+                </div>
+
+                <div
+                  class="bg-white dark:bg-slate-800 text-slate-800 dark:text-slate-200 border border-slate-200 dark:border-slate-700 rounded-xl py-3.5 px-4 flex items-center gap-2 shadow-sm transition-all duration-300 hover:shadow-md hover:border-[#3178C6] group"
+                >
+                  <svg
+                    class="w-5 h-5 text-[#3178C6]"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M1.125 0C.502 0 0 .502 0 1.125v21.75C0 23.498.502 24 1.125 24h21.75c.623 0 1.125-.502 1.125-1.125V1.125C24 .502 23.498 0 22.875 0zm17.363 9.75c.612 0 1.154.037 1.627.111a6.38 6.38 0 0 1 1.306.34v2.458a3.95 3.95 0 0 0-.643-.361 5.093 5.093 0 0 0-.717-.26 5.453 5.453 0 0 0-1.426-.2c-.3 0-.573.028-.819.086a2.1 2.1 0 0 0-.623.242c-.17.104-.3.229-.393.374a.888.888 0 0 0-.14.49c0 .196.053.373.156.529.104.156.252.304.443.444s.423.276.696.41c.273.135.582.274.926.416.47.197.892.407 1.266.628.374.222.695.473.963.753.268.279.472.598.614.957.142.359.214.776.214 1.253 0 .657-.125 1.21-.373 1.656a3.033 3.033 0 0 1-1.012 1.085 4.38 4.38 0 0 1-1.487.596c-.566.12-1.163.18-1.79.18a9.916 9.916 0 0 1-1.84-.164 5.544 5.544 0 0 1-1.512-.493v-2.63a5.033 5.033 0 0 0 3.237 1.2c.333 0 .624-.03.872-.09.249-.06.456-.144.623-.25.166-.108.29-.234.373-.38a1.023 1.023 0 0 0-.074-1.089 2.12 2.12 0 0 0-.537-.5 5.597 5.597 0 0 0-.807-.444 27.72 27.72 0 0 0-1.007-.436c-.918-.383-1.602-.852-2.053-1.405-.45-.553-.676-1.222-.676-2.005 0-.614.123-1.141.369-1.582.246-.441.58-.804 1.004-1.089a4.494 4.494 0 0 1 1.47-.629 7.536 7.536 0 0 1 1.77-.201zm-15.113.188h9.563v2.166H9.506v9.646H6.789v-9.646H3.375z"
+                    ></path>
+                  </svg>
+
+                  <span
+                    class="text-sm font-semibold text-slate-700 dark:text-slate-300"
+                    >TypeScript</span
+                  >
+                </div>
+
+                <div
+                  class="bg-white dark:bg-slate-800 text-slate-800 dark:text-slate-200 border border-slate-200 dark:border-slate-700 rounded-xl py-3.5 px-4 flex items-center gap-2 shadow-sm transition-all duration-300 hover:shadow-md hover:border-[#38BDF8] group"
+                >
+                  <svg
+                    class="w-5 h-5 text-[#38BDF8]"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C10.337,13.382,8.976,12,6.001,12z"
+                    ></path>
+                  </svg>
+
+                  <span
+                    class="text-sm font-semibold text-slate-700 dark:text-slate-300"
+                    >Tailwind</span
+                  >
+                </div>
+
+                <div
+                  class="bg-white dark:bg-slate-800 text-slate-800 dark:text-slate-200 border border-slate-200 dark:border-slate-700 rounded-xl py-3.5 px-4 flex items-center gap-2 shadow-sm transition-all duration-300 hover:shadow-md hover:border-black dark:hover:border-white group"
+                >
+                  <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M11.572 0c-.176 0-.31.001-.358.007a19.76 19.76 0 0 1-.364.033C7.443.346 4.25 2.185 2.228 5.012a11.875 11.875 0 0 0-2.119 5.243c-.096.659-.108.854-.108 1.747s.012 1.089.108 1.748c.652 4.506 3.86 8.292 8.209 9.695.779.25 1.6.422 2.534.525.363.04 1.935.04 2.299 0 1.611-.178 2.977-.577 4.323-1.264.207-.106.247-.134.219-.158-.02-.013-.9-1.193-1.955-2.62l-1.919-2.592-2.404-3.558a338.739 338.739 0 0 0-2.422-3.556c-.009-.002-.018 1.579-.023 3.51-.007 3.38-.01 3.515-.052 3.595a.426.426 0 0 1-.206.214c-.075.037-.14.044-.495.044H7.81l-.108-.068a.438.438 0 0 1-.157-.171l-.05-.106.006-4.703.007-4.705.072-.092a.645.645 0 0 1 .174-.143c.096-.047.134-.051.54-.051.478 0 .558.018.682.154.035.038 1.337 1.999 2.895 4.361a10760.433 10760.433 0 0 0 4.735 7.17l1.9 2.879.096-.063a12.317 12.317 0 0 0 2.466-2.163 11.944 11.944 0 0 0 2.824-6.134c.096-.66.108-.854.108-1.748 0-.893-.012-1.088-.108-1.747-.652-4.506-3.859-8.292-8.208-9.695a12.597 12.597 0 0 0-2.499-.523A33.119 33.119 0 0 0 11.572 0zm4.069 7.217c.347 0 .408.005.486.047a.473.473 0 0 1 .237.277c.018.06.023 1.365.018 4.304l-.006 4.218-.744-1.14-.746-1.14v-3.066c0-1.982.01-3.097.023-3.15a.478.478 0 0 1 .233-.296c.096-.05.13-.054.5-.054z"
+                    ></path>
+                  </svg>
+
+                  <span
+                    class="text-sm font-semibold text-slate-700 dark:text-slate-300"
+                    >Next.js</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="order-1 lg:order-2 flex items-center justify-center lg:justify-start relative"
+            >
+              <div class="relative z-10">
+                <div
+                  class="absolute -inset-3 bg-linear-to-br from-primary via-secondary to-accent rounded-full opacity-75 blur-sm animate-pulse"
+                ></div>
+
+                <div
+                  class="absolute -inset-2 bg-linear-to-br from-primary via-secondary to-accent rounded-full"
+                ></div>
+
+                <div
+                  class="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden bg-slate-200 dark:bg-slate-800 border-4 border-white dark:border-slate-900"
+                >
+                  <img
+                    src="./assets/images/Ahmed-Mohammed.png"
+                    alt="Ahmed Mohammed - Front-End Developer"
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+
+                <div
+                  class="py-3 px-2 rounded-2xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-xl absolute -top-4 -right-4 animate-bounce"
+                  style="animation-duration: 3s"
+                >
+                  <i class="fa-brands fa-react text-3xl text-[#61DAFB]"></i>
+                </div>
+
+                <div
+                  class="py-4 px-2 rounded-2xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-xl absolute top-1/4 -left-6 animate-bounce"
+                  style="animation-duration: 2.5s; animation-delay: 0.5s"
+                >
+                  <i class="fa-brands fa-vuejs text-3xl text-[#4FC08D]"></i>
+                </div>
+
+                <div
+                  class="py-3.5 px-1.5 rounded-2xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-xl absolute -bottom-4 -right-4 animate-bounce"
+                  style="animation-duration: 3.5s; animation-delay: 1s"
+                >
+                  <i class="fa-brands fa-figma text-3xl text-[#F24E1E]"></i>
+                </div>
+
+                <div
+                  class="p-3 rounded-2xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-xl absolute -left-6 bottom-1/4 animate-bounce"
+                  style="animation-duration: 2s; animation-delay: 1.5s"
+                >
+                  <i class="fa-solid fa-code text-3xl text-primary"></i>
+                </div>
+              </div>
+
+              <div class="absolute inset-0 flex justify-center items-center">
+                <div
+                  class="absolute w-100 h-100 md:w-112.5 md:h-112.5 rounded-full border-2 border-dashed border-primary/30 animate-spin"
+                  style="animation-duration: 30s"
+                ></div>
+              </div>
+
+              <div class="absolute inset-0 flex justify-center items-center">
+                <div
+                  class="absolute w-87 h-87 md:w-95 md:h-95 rounded-full border-2 border-secondary/20 animate-spin"
+                  style="animation-duration: 20s; animation-direction: reverse"
+                ></div>
+              </div>
+            </div>
+
+            <a
+              href="#about"
+              id="scroll-btn"
+              class="hidden md:flex flex-col items-center gap-2 absolute -bottom-10 left-1/2 -translate-x-1/2 hover:text-primary duration-300 transition-colors animate-bounce"
+            >
+              <span
+                class="text-sm text-slate-500 dark:text-slate-400 hover:text-primary"
+                >اكتشف المزيد</span
+              >
+
+              <div
+                class="h-10 w-6 flex flex-col items-center border-2 border-slate-400 dark:border-slate-600 hover:border-primary rounded-full pt-2 duration-300 animate-pulse"
+              >
+                <div class="w-1.5 h-3 bg-primary rounded-full"></div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="py-24 px-4 md:px-8 bg-white dark:bg-slate-900/50 relative overflow-hidden"
+        id="about"
+      >
+        <div
+          class="w-96 h-96 rounded-full absolute left-1/4 top-0 bg-primary filter blur-3xl opacity-10"
+        ></div>
+
+        <div
+          class="w-80 h-80 rounded-full absolute right-1/4 bottom-0 bg-primary filter blur-3xl opacity-10"
+        ></div>
+
+        <div class="container mx-auto max-w-7xl relative z-10">
+          <div class="text-center mb-16">
+            <p class="text-primary text-lg font-medium mb-3 block">من أنا</p>
+
+            <h2 class="text-5xl font-black mb-4">
+              عن
+              <span
+                class="bg-clip-text text-transparent bg-linear-to-l from-primary to-secondary"
+                >أحمد محمد</span
+              >
+            </h2>
+
+            <div
+              class="w-24 h-1.5 mx-auto rounded-full bg-linear-to-l from-primary to-secondary"
+            ></div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div>
+              <div class="relative">
+                <div
+                  class="absolute -right-2 -top-4 text-8xl text-primary/10 font-serif leading-none"
+                >
+                  "
+                </div>
+
+                <div class="relative z-10 mb-6">
+                  <h4
+                    class="text-3xl font-black text-slate-600 dark:text-white mb-6"
+                  >
+                    بحب أحول الأفكار
+                    <span class="text-primary">لواقع رقمي</span>
+                  </h4>
+
+                  <p
+                    class="text-lg text-slate-600 dark:text-slate-300 leading-relaxed mb-4"
+                  >
+                    مطور واجهات أمامية متخصص في React وتطوير مواقع ويب حديثة مع
+                    التركيز على الأداء وتجربة المستخدم.
+                  </p>
+
+                  <p
+                    class="text-lg text-slate-600 dark:text-slate-300 leading-relaxed"
+                  >
+                    بشتغل بأحدث التقنيات زي React و Next.js و TypeScript عشان
+                    أقدم حلول عالية الجودة وتعدي التوقعات.
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex flex-wrap items-center gap-4 mb-6">
+                <div
+                  class="flex items-center gap-2 py-2 px-4 rounded-full bg-slate-200 dark:bg-slate-800"
+                >
+                  <i class="fa-solid fa-graduation-cap text-primary"></i>
+
+                  <span class="text-sm font-medium"
+                    >تكنولوجيا الإدارة ونظم المعلومات</span
+                  >
+                </div>
+
+                <div
+                  class="flex items-center gap-2 py-2 px-4 rounded-full bg-slate-200 dark:bg-slate-800"
+                >
+                  <i class="fa-solid fa-briefcase text-primary"></i>
+
+                  <span class="text-sm font-medium">+5 مشروع</span>
+                </div>
+
+                <div
+                  class="flex items-center gap-2 py-2 px-4 rounded-full bg-slate-200 dark:bg-slate-800"
+                >
+                  <i class="fa-solid fa-code text-primary"></i>
+
+                  <span class="text-sm font-medium">+10 تقنيات مستخدمة</span>
+                </div>
+              </div>
+
+              <div
+                class="bg-slate-50 dark:bg-slate-800/40 border border-slate-200 dark:border-slate-700 rounded-2xl p-6 backdrop-blur-sm"
+              >
+                <h4 class="font-bold text-lg mb-4 flex items-center gap-2">
+                  ما أقدمه
+
+                  <i class="fa-solid fa-rocket text-primary"></i>
+                </h4>
+
+                <div>
+                  <div
+                    class="flex items-center gap-3 mb-3 text-slate-600 dark:text-slate-300"
+                  >
+                    <span class="w-2 h-2 rounded-full bg-primary"></span>
+
+                    <span>تطوير تطبيقات ويب متكاملة بـ React & Next.js</span>
+                  </div>
+
+                  <div
+                    class="flex items-center gap-3 mb-3 text-slate-600 dark:text-slate-300"
+                  >
+                    <span class="w-2 h-2 rounded-full bg-secondary"></span>
+
+                    <span>تصميم واجهات مستخدم حديثة وجذابة</span>
+                  </div>
+
+                  <div
+                    class="flex items-center gap-3 mb-3 text-slate-600 dark:text-slate-300"
+                  >
+                    <span class="w-2 h-2 rounded-full bg-accent"></span>
+
+                    <span>تحسين الأداء وسرعة التحميل</span>
+                  </div>
+
+                  <div
+                    class="flex items-center gap-3 mb-3 text-slate-600 dark:text-slate-300"
+                  >
+                    <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+
+                    <span>تطوير مواقع متوافقة مع جميع الأجهزة</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div
+                class="bg-slate-900 dark:bg-slate-950 rounded-2xl overflow-hidden border border-slate-700 dark:border-slate-600 mb-6 shadow-2xl transition-all duration-500 hover:border-slate-600 hover:shadow-primary/20 transform hover:-translate-y-1"
+              >
+                <div
+                  class="flex items-center gap-2 border-b border-slate-700 py-3 px-4 bg-slate-800 rounded-t-2xl"
+                >
+                  <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                  <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                  <div class="w-3 h-3 rounded-full bg-green-500"></div>
+
+                  <span class="mr-4 text-slate-400 text-sm font-mono"
+                    >ahmed.js</span
+                  >
+                </div>
+
+                <div
+                  class="p-6 overflow-x-hidden font-mono text-sm md:text-base leading-relaxed text-slate-200"
+                  dir="ltr"
+                >
+                  <p class="mb-3 text-slate-500">// Quick overview about me</p>
+
+                  <p>
+                    <span class="text-purple-400">const </span>
+                    <span class="text-blue-400">ahmed </span> = &#123;
+                  </p>
+
+                  <p class="ml-4">
+                    <span class="text-green-400">name</span>:
+                    <span class="text-yellow-400">
+                      "Ahmed Mohammed Abdallah"</span
+                    >,
+                  </p>
+                  <p class="ml-4">
+                    <span class="text-green-400">title</span>:
+                    <span class="text-yellow-400"> "Frontend Developer"</span>,
+                  </p>
+                  <p class="ml-4">
+                    <span class="text-green-400">experience</span>:
+                    <span class="text-yellow-400">"Open to Opportunities"</span
+                    >,
+                  </p>
+                  <p class="ml-4">
+                    <span class="text-green-400">location</span>:
+                    <span class="text-yellow-400"> "Qena, Egypt 🇪🇬"</span>,
+                  </p>
+                  <p class="ml-4">
+                    <span class="text-green-400">Skills</span>: [
+                  </p>
+
+                  <p class="ml-8">
+                    <span class="text-yellow-400">"React"</span>,
+                    <span class="text-yellow-400">"Next.js"</span>,
+                  </p>
+                  <p class="ml-8">
+                    <span class="text-yellow-400">"TypeScript"</span>,
+                    <span class="text-yellow-400">"Tailwind"</span>
+                  </p>
+
+                  <p>],</p>
+
+                  <p class="ml-4">
+                    <span class="text-green-400">passion</span>:
+                    <span class="text-yellow-400">
+                      "Creating pixel-perfect UIs"</span
+                    >,
+                  </p>
+                  <p class="ml-4">
+                    <span class="text-green-400">available</span>:
+                    <span class="text-blue-400"> true</span>,
+                  </p>
+                  <p class="ml-4">
+                    <span class="text-green-400">hireable</span>:
+                    <span class="text-blue-400"> true</span>
+                  </p>
+
+                  <p>&#125;;</p>
+
+                  <p class="mt-4">
+                    <span class="text-purple-400">export default </span>
+                    <span class="text-blue-400">ahmed</span>;
+                  </p>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-3 gap-4 mb-6">
+                <div
+                  class="bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-center backdrop-blur-sm rounded-2xl p-5 hover:border-primary duration-300 transition-all"
+                >
+                  <div class="text-3xl font-black text-primary mb-1">5+</div>
+
+                  <div class="text-sm text-slate-600 dark:text-slate-400">
+                    مشروع
+                  </div>
+                </div>
+
+                <div
+                  class="bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-center backdrop-blur-sm rounded-2xl p-5 hover:border-secondary duration-300 transition-all"
+                >
+                  <div class="text-3xl font-black text-secondary mb-1">3+</div>
+
+                  <div class="text-sm text-slate-600 dark:text-slate-400">
+                    برامج تدريبية
+                  </div>
+                </div>
+
+                <div
+                  class="bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-center backdrop-blur-sm rounded-2xl p-5 hover:border-accent duration-300 transition-all"
+                >
+                  <div class="text-3xl font-black text-accent mb-1">10+</div>
+
+                  <div class="text-sm text-slate-600 dark:text-slate-400">
+                    تقنية
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex justify-center lg:justify-end gap-4">
+                <a
+                  href="https://github.com/AhmedMohammed52"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="w-12 h-12 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl flex items-center justify-center duration-300 transition-all hover:text-white hover:bg-primary"
+                >
+                  <i class="fa-brands fa-github text-xl"></i>
+                </a>
+
+                <a
+                  href="https://www.linkedin.com/in/ahmed-mohammed-99a121267/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="w-12 h-12 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl flex items-center justify-center duration-300 transition-all hover:text-white hover:bg-[#0A66C2]"
+                >
+                  <i class="fa-brands fa-linkedin text-xl"></i>
+                </a>
+
+                <a
+                  href="mailto:amoa220504@gmail.com?subject=استفسار&body=مرحباً، أود معرفة تفاصيل أكثر عن..."
+                  class="w-12 h-12 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl flex items-center justify-center duration-300 transition-all hover:text-white hover:bg-[#EA4C89]"
+                >
+                  <i class="fa-solid fa-envelope text-xl"></i>
+                </a>
+
+                <a
+                  href="https://wa.me/201090695824"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="w-12 h-12 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl flex items-center justify-center duration-300 transition-all hover:text-white hover:bg-green-400"
+                >
+                  <i class="fa-brands fa-whatsapp text-xl"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="py-24 px-4 md:px-8 bg-slate-50 dark:bg-transparent relative overflow-h"
+        id="skills-section"
+      >
+        <div
+          class="absolute w-96 h-96 rounded-full bottom-0 right-1/3 bg-secondary filter blur-3xl opacity-10"
+        ></div>
+
+        <div class="container mx-auto max-w-7xl relative z-10">
+          <div class="text-center mb-16">
+            <p class="text-secondary text-lg font-medium mb-3 block">
+              ما أتقنه
+            </p>
+
+            <h2 class="text-5xl font-black mb-4">
+              المهارات و
+              <span
+                class="bg-clip-text text-transparent bg-linear-to-l from-secondary to-accent"
+                >التقنيات
+              </span>
+            </h2>
+
+            <div class="text-3xl"></div>
+
+            <div
+              class="w-24 h-1.5 mx-auto rounded-full bg-linear-to-l from-secondary to-accent"
+            ></div>
+          </div>
+
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16"
+          >
+            <div
+              class="p-8 bg-white dark:bg-slate-800/30 border border-slate-300 dark:border-slate-700 rounded-2xl duration-300 hover:border-primary backdrop-blur-sm transition-all hover:transform hover:scale-105"
+            >
+              <div class="flex justify-between items-center mb-6">
+                <h3 class="text-2xl font-bold">React.js</h3>
+
+                <i class="fa-brands fa-react text-primary text-4xl"></i>
+              </div>
+
+              <div
+                class="w-full h-3 rounded-full bg-slate-200 dark:bg-slate-700 relative mb-3"
+              >
+                <div
+                  class="h-3 w-[60%] bg-linear-to-r from-primary to-secondary rounded-full"
+                ></div>
+              </div>
+
+              <p class="text-slate-500 dark:text-slate-400">
+                خبرة متقدمة في بناء تطبيقات React معقدة
+              </p>
+            </div>
+
+            <div
+              class="p-8 bg-white dark:bg-slate-800/30 border border-slate-300 dark:border-slate-700 rounded-2xl duration-300 hover:border-secondary backdrop-blur-sm transition-all hover:transform hover:scale-105"
+            >
+              <div class="flex justify-between items-center mb-6">
+                <h3 class="text-2xl font-bold">Next.js</h3>
+
+                <i class="fa-solid fa-n text-secondary text-4xl"></i>
+              </div>
+
+              <div
+                class="w-full h-3 rounded-full bg-slate-200 dark:bg-slate-700 relative mb-3"
+              >
+                <div
+                  class="h-3 w-1/2 bg-linear-to-r from-secondary to-accent rounded-full"
+                ></div>
+              </div>
+
+              <p class="text-slate-500 dark:text-slate-400">
+                تطوير تطبيقات SSR وSSG متقدمة
+              </p>
+            </div>
+
+            <div
+              class="p-8 bg-white dark:bg-slate-800/30 border border-slate-300 dark:border-slate-700 rounded-2xl duration-300 hover:border-accent backdrop-blur-sm transition-all hover:transform hover:scale-105"
+            >
+              <div class="flex justify-between items-center mb-6">
+                <h3 class="text-2xl font-bold">TypeScript</h3>
+
+                <i class="fa-solid fa-code text-accent text-4xl"></i>
+              </div>
+
+              <div
+                class="w-full h-3 rounded-full bg-slate-200 dark:bg-slate-700 relative mb-3"
+              >
+                <div
+                  class="h-3 w-1/2 bg-linear-to-r from-accent to-primary rounded-full"
+                ></div>
+              </div>
+
+              <p class="text-slate-500 dark:text-slate-400">
+                كتابة كود آمن ومنظم بشكل احترافي
+              </p>
+            </div>
+
+            <div
+              class="p-8 bg-white dark:bg-slate-800/30 border border-slate-300 dark:border-slate-700 rounded-2xl duration-300 hover:border-primary backdrop-blur-sm transition-all hover:transform hover:scale-105"
+            >
+              <div class="flex justify-between items-center mb-6">
+                <h3 class="text-2xl font-bold">Tailwind CSS</h3>
+
+                <i class="fa-solid fa-wind text-primary text-4xl"></i>
+              </div>
+
+              <div
+                class="w-full h-3 rounded-full bg-slate-200 dark:bg-slate-700 relative mb-3"
+              >
+                <div
+                  class="h-3 w-[95%] bg-linear-to-r from-primary to-secondary rounded-full"
+                ></div>
+              </div>
+
+              <p class="text-slate-500 dark:text-slate-400">
+                تصميم واجهات حديثة بسرعة عالية
+              </p>
+            </div>
+
+            <div
+              class="p-8 bg-white dark:bg-slate-800/30 border border-slate-300 dark:border-slate-700 rounded-2xl duration-300 hover:border-secondary backdrop-blur-sm transition-all hover:transform hover:scale-105"
+            >
+              <div class="flex justify-between items-center mb-6">
+                <h3 class="text-2xl font-bold">GitHub</h3>
+
+                <i class="fa-brands fa-github text-secondary text-4xl"></i>
+              </div>
+
+              <div
+                class="w-full h-3 rounded-full bg-slate-200 dark:bg-slate-700 relative mb-3"
+              >
+                <div
+                  class="h-3 w-1/2 bg-linear-to-r from-secondary to-accent rounded-full"
+                ></div>
+              </div>
+
+              <p class="text-slate-500 dark:text-slate-400">
+                إدارة الأكواد والتعاون في تطوير المشاريع.
+              </p>
+            </div>
+
+            <div
+              class="p-8 bg-white dark:bg-slate-800/30 border border-slate-300 dark:border-slate-700 rounded-2xl duration-300 hover:border-accent backdrop-blur-sm transition-all hover:transform hover:scale-105"
+            >
+              <div class="flex justify-between items-center mb-6">
+                <h3 class="text-2xl font-bold">Figma</h3>
+
+                <i class="fa-brands fa-figma text-accent text-4xl"></i>
+              </div>
+
+              <div
+                class="w-full h-3 rounded-full bg-slate-200 dark:bg-slate-700 relative mb-3"
+              >
+                <div
+                  class="h-3 w-1/2 bg-linear-to-r from-accent to-primary rounded-full"
+                ></div>
+              </div>
+
+              <p class="text-slate-500 dark:text-slate-400">
+                تصميم واجهات احترافية ونماذج تفاعلية
+              </p>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div
+              class="p-6 bg-slate-100 dark:bg-slate-800/20 rounded-xl border border-slate-300 dark:border-slate-700 text-center"
+            >
+              <i class="fa-brands fa-html5 text-orange-500 text-5xl mb-2"></i>
+
+              <p class="text-slate-600 dark:text-slate-300 font-medium">
+                HTML5
+              </p>
+            </div>
+
+            <div
+              class="p-6 bg-slate-100 dark:bg-slate-800/20 rounded-xl border border-slate-300 dark:border-slate-700 text-center"
+            >
+              <i class="fa-brands fa-css3-alt text-blue-500 text-5xl mb-2"></i>
+
+              <p class="text-slate-600 dark:text-slate-300 font-medium">CSS3</p>
+            </div>
+
+            <div
+              class="p-6 bg-slate-100 dark:bg-slate-800/20 rounded-xl border border-slate-300 dark:border-slate-700 text-center"
+            >
+              <i class="fa-brands fa-js text-yellow-500 text-5xl mb-2"></i>
+
+              <p class="text-slate-600 dark:text-slate-300 font-medium">
+                JavaScript
+              </p>
+            </div>
+
+            <div
+              class="p-6 bg-slate-100 dark:bg-slate-800/20 rounded-xl border border-slate-300 dark:border-slate-700 text-center"
+            >
+              <i class="fa-brands fa-git-alt text-red-500 text-5xl mb-2"></i>
+
+              <p class="text-slate-600 dark:text-slate-300 font-medium">Git</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="py-24 px-4 md:px-8 bg-white dark:bg-slate-900/50 relative overflow-h"
+        id="portfolio"
+      >
+        <div
+          class="absolute w-96 h-96 rounded-full top-1/4 left-1/4 bg-primary filter blur-3xl opacity-10"
+        ></div>
+
+        <div class="container mx-auto max-w-7xl relative z-10">
+          <div class="text-center mb-16">
+            <p class="text-primary text-lg font-medium mb-3 block">أعمالي</p>
+
+            <h2 class="text-5xl font-black mb-4">
+              معرض
+              <span
+                class="bg-clip-text text-transparent bg-linear-to-l from-primary to-secondary"
+              >
+                المشاريع</span
+              >
+            </h2>
+
+            <div class="text-2xl"></div>
+
+            <div
+              class="w-24 h-1.5 mx-auto rounded-full bg-linear-to-l from-primary to-secondary"
+            ></div>
+          </div>
+
+          <div
+            class="flex flex-wrap justify-center items-center gap-4 mb-12"
+            id="portfolio-filters"
+          >
+            <button
+              class="portfolio-filters active py-3 px-8 rounded-xl bg-white dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300 border border-slate-300 dark:border-slate-700 font-bold duration-300 transition-all cursor-pointer"
+              data-filter="all"
+            >
+              الكل
+            </button>
+
+            <button
+              class="portfolio-filters py-3 px-8 rounded-xl bg-white dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300 border border-slate-300 dark:border-slate-700 font-bold duration-300 transition-all cursor-pointer"
+              data-filter="web"
+            >
+              مواقع الويب
+            </button>
+
+            <button
+              class="portfolio-filters py-3 px-8 rounded-xl bg-white dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300 border border-slate-300 dark:border-slate-700 font-bold duration-300 transition-all cursor-pointer"
+              data-filter="app"
+            >
+              التطبيقات
+            </button>
+
+            <button
+              class="portfolio-filters py-3 px-8 rounded-xl bg-white dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300 border border-slate-300 dark:border-slate-700 font-bold duration-300 transition-all cursor-pointer"
+              data-filter="design"
+            >
+              التصميم
+            </button>
+
+            <button
+              class="portfolio-filters py-3 px-8 rounded-xl bg-white dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300 border border-slate-300 dark:border-slate-700 font-bold duration-300 transition-all cursor-pointer"
+              data-filter="ecommerce"
+            >
+              التجارة الإلكترونية
+            </button>
+          </div>
+
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+            id="portfolio-grid"
+          >
+            <div
+              class="portfolio-item opacity-100 scale-100 overflow-hidden rounded-2xl group bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 transition-all duration-300 hover:border-primary"
+              data-category="web"
+            >
+              <div class="relative h-72 overflow-hidden">
+                <img
+                  src="./assets/images/portfolio-1-BqicZ04C.webp"
+                  alt=""
+                  class="h-full w-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  loading="lazy"
+                />
+
+                <div
+                  class="bg-linear-to-t from-slate-900 via-slate-900/50 to-transparent opacity-0 absolute inset-0 group-hover:opacity-100 duration-300 transition-opacity"
+                ></div>
+              </div>
+
+              <div class="p-6">
+                <div class="flex justify-between items-center mb-3">
+                  <span
+                    class="py-1 px-4 text-sm font-medium bg-primary/20 text-primary rounded-full"
+                    >موقع ويب</span
+                  >
+
+                  <div class="flex gap-2">
+                    <a
+                      href="#"
+                      class="w-10 h-10 rounded-lg bg-slate-200 dark:bg-slate-700 flex items-center justify-center transition-colors duration-300 group hover:bg-primary group"
+                    >
+                      <i
+                        class="fa-solid fa-eye text-slate-600 dark:text-white group-hover:dark:text-white hover:text-white"
+                      ></i>
+                    </a>
+
+                    <a
+                      href="#"
+                      class="w-10 h-10 rounded-lg bg-slate-200 dark:bg-slate-700 flex items-center justify-center transition-colors duration-300 group hover:bg-primary group"
+                    >
+                      <i
+                        class="fa-brands fa-github text-slate-600 dark:text-white group-hover:dark:text-white hover:text-white"
+                      ></i>
+                    </a>
+                  </div>
+                </div>
+
+                <h3 class="font-bold text-2xl mb-2">متجر إلكتروني متكامل</h3>
+
+                <p class="text-slate-500 dark:text-slate-400 mb-4">
+                  منصة تجارة إلكترونية حديثة مع نظام دفع آمن وإدارة المنتجات
+                </p>
+
+                <div class="flex flex-wrap gap-2">
+                  <span
+                    class="px-3 py-1 bg-slate-100 dark:bg-slate-700 rounded-lg text-xs"
+                    >React
+                  </span>
+
+                  <span
+                    class="px-3 py-1 bg-slate-100 dark:bg-slate-700 rounded-lg text-xs"
+                    >Node.js
+                  </span>
+
+                  <span
+                    class="px-3 py-1 bg-slate-100 dark:bg-slate-700 rounded-lg text-xs"
+                    >MongoDB</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="portfolio-item opacity-100 scale-100 overflow-hidden rounded-2xl group bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 transition-all duration-300 hover:border-primary"
+              data-category="app"
+            >
+              <div class="relative h-72 overflow-hidden">
+                <img
+                  src="./assets/images/portfolio-2-D0_acfF_.webp"
+                  alt=""
+                  class="h-full w-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  loading="lazy"
+                />
+
+                <div
+                  class="bg-linear-to-t from-slate-900 via-slate-900/50 to-transparent opacity-0 absolute inset-0 group-hover:opacity-100 duration-300 transition-opacity"
+                ></div>
+              </div>
+
+              <div class="p-6">
+                <div class="flex justify-between items-center mb-3">
+                  <span
+                    class="py-1 px-4 text-sm font-medium bg-secondary/20 text-secondary rounded-full"
+                    >موقع ويب</span
+                  >
+
+                  <div class="flex gap-2">
+                    <a
+                      href="#"
+                      class="w-10 h-10 rounded-lg bg-slate-200 dark:bg-slate-700 flex items-center justify-center transition-colors duration-300 group hover:bg-secondary group"
+                    >
+                      <i
+                        class="fa-solid fa-eye text-slate-600 dark:text-white group-hover:dark:text-white hover:text-white"
+                      ></i>
+                    </a>
+
+                    <a
+                      href="#"
+                      class="w-10 h-10 rounded-lg bg-slate-200 dark:bg-slate-700 flex items-center justify-center transition-colors duration-300 group hover:bg-secondary group"
+                    >
+                      <i
+                        class="fa-brands fa-github text-slate-600 dark:text-white group-hover:dark:text-white hover:text-white"
+                      ></i>
+                    </a>
+                  </div>
+                </div>
+
+                <h3 class="font-bold text-2xl mb-2">متجر إلكتروني متكامل</h3>
+
+                <p class="text-slate-500 dark:text-slate-400 mb-4">
+                  منصة تجارة إلكترونية حديثة مع نظام دفع آمن وإدارة المنتجات
+                </p>
+
+                <div class="flex flex-wrap gap-2">
+                  <span
+                    class="px-3 py-1 bg-slate-100 dark:bg-slate-700 rounded-lg text-xs"
+                    >React
+                  </span>
+
+                  <span
+                    class="px-3 py-1 bg-slate-100 dark:bg-slate-700 rounded-lg text-xs"
+                    >Node.js
+                  </span>
+
+                  <span
+                    class="px-3 py-1 bg-slate-100 dark:bg-slate-700 rounded-lg text-xs"
+                    >MongoDB</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="portfolio-item opacity-100 scale-100 overflow-hidden rounded-2xl group bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 transition-all duration-300 hover:border-primary"
+              data-category="design"
+            >
+              <div class="relative h-72 overflow-hidden">
+                <img
+                  src="./assets/images/portfolio-3-uJsBXCgl.webp"
+                  alt=""
+                  class="h-full w-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  loading="lazy"
+                />
+
+                <div
+                  class="bg-linear-to-t from-slate-900 via-slate-900/50 to-transparent opacity-0 absolute inset-0 group-hover:opacity-100 duration-300 transition-opacity"
+                ></div>
+              </div>
+
+              <div class="p-6">
+                <div class="flex justify-between items-center mb-3">
+                  <span
+                    class="py-1 px-4 text-sm font-medium bg-accent/20 text-accent rounded-full"
+                    >موقع ويب</span
+                  >
+
+                  <div class="flex gap-2">
+                    <a
+                      href="#"
+                      class="w-10 h-10 rounded-lg bg-slate-200 dark:bg-slate-700 flex items-center justify-center transition-colors duration-300 group hover:bg-accent group"
+                    >
+                      <i
+                        class="fa-solid fa-eye text-slate-600 dark:text-white group-hover:dark:text-white hover:text-white"
+                      ></i>
+                    </a>
+
+                    <a
+                      href="#"
+                      class="w-10 h-10 rounded-lg bg-slate-200 dark:bg-slate-700 flex items-center justify-center transition-colors duration-300 group hover:bg-accent group"
+                    >
+                      <i
+                        class="fa-brands fa-github text-slate-600 dark:text-white group-hover:dark:text-white hover:text-white"
+                      ></i>
+                    </a>
+                  </div>
+                </div>
+
+                <h3 class="font-bold text-2xl mb-2">متجر إلكتروني متكامل</h3>
+
+                <p class="text-slate-500 dark:text-slate-400 mb-4">
+                  منصة تجارة إلكترونية حديثة مع نظام دفع آمن وإدارة المنتجات
+                </p>
+
+                <div class="flex flex-wrap gap-2">
+                  <span
+                    class="px-3 py-1 bg-slate-100 dark:bg-slate-700 rounded-lg text-xs"
+                    >React
+                  </span>
+
+                  <span
+                    class="px-3 py-1 bg-slate-100 dark:bg-slate-700 rounded-lg text-xs"
+                    >Node.js
+                  </span>
+
+                  <span
+                    class="px-3 py-1 bg-slate-100 dark:bg-slate-700 rounded-lg text-xs"
+                    >MongoDB</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="portfolio-item opacity-100 scale-100 overflow-hidden rounded-2xl group bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 transition-all duration-300 hover:border-primary"
+              data-category="web"
+            >
+              <div class="relative h-72 overflow-hidden">
+                <img
+                  src="./assets/images/portfolio-4-Czusdp5K.webp"
+                  alt=""
+                  class="h-full w-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  loading="lazy"
+                />
+
+                <div
+                  class="bg-linear-to-t from-slate-900 via-slate-900/50 to-transparent opacity-0 absolute inset-0 group-hover:opacity-100 duration-300 transition-opacity"
+                ></div>
+              </div>
+
+              <div class="p-6">
+                <div class="flex justify-between items-center mb-3">
+                  <span
+                    class="py-1 px-4 text-sm font-medium bg-primary/20 text-primary rounded-full"
+                    >موقع ويب</span
+                  >
+
+                  <div class="flex gap-2">
+                    <a
+                      href="#"
+                      class="w-10 h-10 rounded-lg bg-slate-200 dark:bg-slate-700 flex items-center justify-center transition-colors duration-300 group hover:bg-primary group"
+                    >
+                      <i
+                        class="fa-solid fa-eye text-slate-600 dark:text-white group-hover:dark:text-white hover:text-white"
+                      ></i>
+                    </a>
+
+                    <a
+                      href="#"
+                      class="w-10 h-10 rounded-lg bg-slate-200 dark:bg-slate-700 flex items-center justify-center transition-colors duration-300 group hover:bg-primary group"
+                    >
+                      <i
+                        class="fa-brands fa-github text-slate-600 dark:text-white group-hover:dark:text-white hover:text-white"
+                      ></i>
+                    </a>
+                  </div>
+                </div>
+
+                <h3 class="font-bold text-2xl mb-2">متجر إلكتروني متكامل</h3>
+
+                <p class="text-slate-500 dark:text-slate-400 mb-4">
+                  منصة تجارة إلكترونية حديثة مع نظام دفع آمن وإدارة المنتجات
+                </p>
+
+                <div class="flex flex-wrap gap-2">
+                  <span
+                    class="px-3 py-1 bg-slate-100 dark:bg-slate-700 rounded-lg text-xs"
+                    >React
+                  </span>
+
+                  <span
+                    class="px-3 py-1 bg-slate-100 dark:bg-slate-700 rounded-lg text-xs"
+                    >Node.js
+                  </span>
+
+                  <span
+                    class="px-3 py-1 bg-slate-100 dark:bg-slate-700 rounded-lg text-xs"
+                    >MongoDB</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="portfolio-item opacity-100 scale-100 overflow-hidden rounded-2xl group bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 transition-all duration-300 hover:border-primary"
+              data-category="app"
+            >
+              <div class="relative h-72 overflow-hidden">
+                <img
+                  src="./assets/images/portfolio-5-ChqqtI-W.webp"
+                  alt=""
+                  class="h-full w-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  loading="lazy"
+                />
+
+                <div
+                  class="bg-linear-to-t from-slate-900 via-slate-900/50 to-transparent opacity-0 absolute inset-0 group-hover:opacity-100 duration-300 transition-opacity"
+                ></div>
+              </div>
+
+              <div class="p-6">
+                <div class="flex justify-between items-center mb-3">
+                  <span
+                    class="py-1 px-4 text-sm font-medium bg-secondary/20 text-secondary rounded-full"
+                    >موقع ويب</span
+                  >
+
+                  <div class="flex gap-2">
+                    <a
+                      href="#"
+                      class="w-10 h-10 rounded-lg bg-slate-200 dark:bg-slate-700 flex items-center justify-center transition-colors duration-300 group hover:bg-secondary group"
+                    >
+                      <i
+                        class="fa-solid fa-eye text-slate-600 dark:text-white group-hover:dark:text-white hover:text-white"
+                      ></i>
+                    </a>
+
+                    <a
+                      href="#"
+                      class="w-10 h-10 rounded-lg bg-slate-200 dark:bg-slate-700 flex items-center justify-center transition-colors duration-300 group hover:bg-secondary group"
+                    >
+                      <i
+                        class="fa-brands fa-github text-slate-600 dark:text-white group-hover:dark:text-white hover:text-white"
+                      ></i>
+                    </a>
+                  </div>
+                </div>
+
+                <h3 class="font-bold text-2xl mb-2">متجر إلكتروني متكامل</h3>
+
+                <p class="text-slate-500 dark:text-slate-400 mb-4">
+                  منصة تجارة إلكترونية حديثة مع نظام دفع آمن وإدارة المنتجات
+                </p>
+
+                <div class="flex flex-wrap gap-2">
+                  <span
+                    class="px-3 py-1 bg-slate-100 dark:bg-slate-700 rounded-lg text-xs"
+                    >React
+                  </span>
+
+                  <span
+                    class="px-3 py-1 bg-slate-100 dark:bg-slate-700 rounded-lg text-xs"
+                    >Node.js
+                  </span>
+
+                  <span
+                    class="px-3 py-1 bg-slate-100 dark:bg-slate-700 rounded-lg text-xs"
+                    >MongoDB</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="portfolio-item opacity-100 scale-100 overflow-hidden rounded-2xl group bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 transition-all duration-300 hover:border-primary"
+              data-category="ecommerce"
+            >
+              <div class="relative h-72 overflow-hidden">
+                <img
+                  src="./assets/images/portfolio-6-C9bxzsei.webp"
+                  alt=""
+                  class="h-full w-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  loading="lazy"
+                />
+
+                <div
+                  class="bg-linear-to-t from-slate-900 via-slate-900/50 to-transparent opacity-0 absolute inset-0 group-hover:opacity-100 duration-300 transition-opacity"
+                ></div>
+              </div>
+
+              <div class="p-6">
+                <div class="flex justify-between items-center mb-3">
+                  <span
+                    class="py-1 px-4 text-sm font-medium bg-accent/20 text-accent rounded-full"
+                    >موقع ويب</span
+                  >
+
+                  <div class="flex gap-2">
+                    <a
+                      href="#"
+                      class="w-10 h-10 rounded-lg bg-slate-200 dark:bg-slate-700 flex items-center justify-center transition-colors duration-300 group hover:bg-accent group"
+                    >
+                      <i
+                        class="fa-solid fa-eye text-slate-600 dark:text-white group-hover:dark:text-white hover:text-white"
+                      ></i>
+                    </a>
+
+                    <a
+                      href="#"
+                      class="w-10 h-10 rounded-lg bg-slate-200 dark:bg-slate-700 flex items-center justify-center transition-colors duration-300 group hover:bg-accent group"
+                    >
+                      <i
+                        class="fa-brands fa-github text-slate-600 dark:text-white group-hover:dark:text-white hover:text-white"
+                      ></i>
+                    </a>
+                  </div>
+                </div>
+
+                <h3 class="font-bold text-2xl mb-2">متجر إلكتروني متكامل</h3>
+
+                <p class="text-slate-500 dark:text-slate-400 mb-4">
+                  منصة تجارة إلكترونية حديثة مع نظام دفع آمن وإدارة المنتجات
+                </p>
+
+                <div class="flex flex-wrap gap-2">
+                  <span
+                    class="px-3 py-1 bg-slate-100 dark:bg-slate-700 rounded-lg text-xs"
+                    >React
+                  </span>
+
+                  <span
+                    class="px-3 py-1 bg-slate-100 dark:bg-slate-700 rounded-lg text-xs"
+                    >Node.js
+                  </span>
+
+                  <span
+                    class="px-3 py-1 bg-slate-100 dark:bg-slate-700 rounded-lg text-xs"
+                    >MongoDB</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="portfolio-item opacity-100 scale-100 overflow-hidden rounded-2xl group bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 transition-all duration-300 hover:border-primary"
+              data-category="web"
+            >
+              <div class="relative h-72 overflow-hidden">
+                <img
+                  src="./assets/images/portfolio-7-BXDNVwGk.webp"
+                  alt=""
+                  class="h-full w-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  loading="lazy"
+                />
+
+                <div
+                  class="bg-linear-to-t from-slate-900 via-slate-900/50 to-transparent opacity-0 absolute inset-0 group-hover:opacity-100 duration-300 transition-opacity"
+                ></div>
+              </div>
+
+              <div class="p-6">
+                <div class="flex justify-between items-center mb-3">
+                  <span
+                    class="py-1 px-4 text-sm font-medium bg-primary/20 text-primary rounded-full"
+                    >موقع ويب</span
+                  >
+
+                  <div class="flex gap-2">
+                    <a
+                      href="#"
+                      class="w-10 h-10 rounded-lg bg-slate-200 dark:bg-slate-700 flex items-center justify-center transition-colors duration-300 group hover:bg-primary group"
+                    >
+                      <i
+                        class="fa-solid fa-eye text-slate-600 dark:text-white group-hover:dark:text-white hover:text-white"
+                      ></i>
+                    </a>
+
+                    <a
+                      href="#"
+                      class="w-10 h-10 rounded-lg bg-slate-200 dark:bg-slate-700 flex items-center justify-center transition-colors duration-300 group hover:bg-primary group"
+                    >
+                      <i
+                        class="fa-brands fa-github text-slate-600 dark:text-white group-hover:dark:text-white hover:text-white"
+                      ></i>
+                    </a>
+                  </div>
+                </div>
+
+                <h3 class="font-bold text-2xl mb-2">متجر إلكتروني متكامل</h3>
+
+                <p class="text-slate-500 dark:text-slate-400 mb-4">
+                  منصة تجارة إلكترونية حديثة مع نظام دفع آمن وإدارة المنتجات
+                </p>
+
+                <div class="flex flex-wrap gap-2">
+                  <span
+                    class="px-3 py-1 bg-slate-100 dark:bg-slate-700 rounded-lg text-xs"
+                    >React
+                  </span>
+
+                  <span
+                    class="px-3 py-1 bg-slate-100 dark:bg-slate-700 rounded-lg text-xs"
+                    >Node.js
+                  </span>
+
+                  <span
+                    class="px-3 py-1 bg-slate-100 dark:bg-slate-700 rounded-lg text-xs"
+                    >MongoDB</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="portfolio-item opacity-100 scale-100 overflow-hidden rounded-2xl group bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 transition-all duration-300 hover:border-primary"
+              data-category="app"
+            >
+              <div class="relative h-72 overflow-hidden">
+                <img
+                  src="./assets/images/portfolio-8-BnHB_F_a.webp"
+                  alt=""
+                  class="h-full w-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  loading="lazy"
+                />
+
+                <div
+                  class="bg-linear-to-t from-slate-900 via-slate-900/50 to-transparent opacity-0 absolute inset-0 group-hover:opacity-100 duration-300 transition-opacity"
+                ></div>
+              </div>
+
+              <div class="p-6">
+                <div class="flex justify-between items-center mb-3">
+                  <span
+                    class="py-1 px-4 text-sm font-medium bg-secondary/20 text-secondary rounded-full"
+                    >موقع ويب</span
+                  >
+
+                  <div class="flex gap-2">
+                    <a
+                      href="#"
+                      class="w-10 h-10 rounded-lg bg-slate-200 dark:bg-slate-700 flex items-center justify-center transition-colors duration-300 group hover:bg-secondary group"
+                    >
+                      <i
+                        class="fa-solid fa-eye text-slate-600 dark:text-white group-hover:dark:text-white hover:text-white"
+                      ></i>
+                    </a>
+
+                    <a
+                      href="#"
+                      class="w-10 h-10 rounded-lg bg-slate-200 dark:bg-slate-700 flex items-center justify-center transition-colors duration-300 group hover:bg-secondary group"
+                    >
+                      <i
+                        class="fa-brands fa-github text-slate-600 dark:text-white group-hover:dark:text-white hover:text-white"
+                      ></i>
+                    </a>
+                  </div>
+                </div>
+
+                <h3 class="font-bold text-2xl mb-2">متجر إلكتروني متكامل</h3>
+
+                <p class="text-slate-500 dark:text-slate-400 mb-4">
+                  منصة تجارة إلكترونية حديثة مع نظام دفع آمن وإدارة المنتجات
+                </p>
+
+                <div class="flex flex-wrap gap-2">
+                  <span
+                    class="px-3 py-1 bg-slate-100 dark:bg-slate-700 rounded-lg text-xs"
+                    >React
+                  </span>
+
+                  <span
+                    class="px-3 py-1 bg-slate-100 dark:bg-slate-700 rounded-lg text-xs"
+                    >Node.js
+                  </span>
+
+                  <span
+                    class="px-3 py-1 bg-slate-100 dark:bg-slate-700 rounded-lg text-xs"
+                    >MongoDB</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="portfolio-item opacity-100 scale-100 overflow-hidden rounded-2xl group bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 transition-all duration-300 hover:border-primary"
+              data-category="design"
+            >
+              <div class="relative h-72 overflow-hidden">
+                <img
+                  src="./assets/images/portfolio-9-Q6q-wpwU.webp"
+                  alt=""
+                  class="h-full w-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  loading="lazy"
+                />
+
+                <div
+                  class="bg-linear-to-t from-slate-900 via-slate-900/50 to-transparent opacity-0 absolute inset-0 group-hover:opacity-100 duration-300 transition-opacity"
+                ></div>
+              </div>
+
+              <div class="p-6">
+                <div class="flex justify-between items-center mb-3">
+                  <span
+                    class="py-1 px-4 text-sm font-medium bg-accent/20 text-accent rounded-full"
+                    >موقع ويب</span
+                  >
+
+                  <div class="flex gap-2">
+                    <a
+                      href="#"
+                      class="w-10 h-10 rounded-lg bg-slate-200 dark:bg-slate-700 flex items-center justify-center transition-colors duration-300 group hover:bg-accent group"
+                    >
+                      <i
+                        class="fa-solid fa-eye text-slate-600 dark:text-white group-hover:dark:text-white hover:text-white"
+                      ></i>
+                    </a>
+
+                    <a
+                      href="#"
+                      class="w-10 h-10 rounded-lg bg-slate-200 dark:bg-slate-700 flex items-center justify-center transition-colors duration-300 group hover:bg-accent group"
+                    >
+                      <i
+                        class="fa-brands fa-github text-slate-600 dark:text-white group-hover:dark:text-white hover:text-white"
+                      ></i>
+                    </a>
+                  </div>
+                </div>
+
+                <h3 class="font-bold text-2xl mb-2">متجر إلكتروني متكامل</h3>
+
+                <p class="text-slate-500 dark:text-slate-400 mb-4">
+                  منصة تجارة إلكترونية حديثة مع نظام دفع آمن وإدارة المنتجات
+                </p>
+
+                <div class="flex flex-wrap gap-2">
+                  <span
+                    class="px-3 py-1 bg-slate-100 dark:bg-slate-700 rounded-lg text-xs"
+                    >React
+                  </span>
+
+                  <span
+                    class="px-3 py-1 bg-slate-100 dark:bg-slate-700 rounded-lg text-xs"
+                    >Node.js
+                  </span>
+
+                  <span
+                    class="px-3 py-1 bg-slate-100 dark:bg-slate-700 rounded-lg text-xs"
+                    >MongoDB</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-16 text-center">
+            <a
+              href="#contact"
+              class="inline-block bg-linear-to-r from-primary to-secondary px-12 py-4 rounded-xl text-lg font-bold text-white hover:-translate-y-1 transition-all duration-300"
+            >
+              <i class="fa-solid fa-rocket me-2"></i>
+
+              لنبدأ مشروعك القادم
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="experience-section py-24 px-4 md:px-8 bg-slate-50 dark:bg-transparent relative overflow-h"
+        id="experience"
+      >
+        <div
+          class="absolute w-96 h-96 rounded-full top-1/3 right-1/4 bg-secondary filter blur-3xl opacity-10"
+        ></div>
+
+        <div class="container mx-auto max-w-7xl relative z-10">
+          <div class="text-center mb-16">
+            <p class="text-secondary text-lg font-medium mb-3 block">
+              مسيرتي المهنية
+            </p>
+
+            <h2 class="text-5xl font-black mb-4">
+              الخبرة
+              <span
+                class="bg-clip-text text-transparent bg-linear-to-l from-secondary to-accent"
+                >العملية
+              </span>
+            </h2>
+
+            <div
+              class="w-24 h-1.5 mx-auto rounded-full bg-linear-to-l from-secondary to-accent"
+            ></div>
+          </div>
+
+          <div class="relative">
+            <div
+              class="absolute transform right-1/2 translate-x-1/2 h-full w-1 rounded-full bg-linear-to-b from-primary via-secondary to-accent"
+            ></div>
+
+            <div class="content-box">
+              <div class="relative flex items-center mb-12">
+                <div class="w-1/2 text-right pl-8">
+                  <div
+                    class="card-left relative bg-white dark:bg-slate-800/50 p-8 backdrop-blur-sm border border-slate-200 dark:border-slate-700 rounded-2xl duration-300 transform transition-all hover:border-primary"
+                  >
+                    <div class="flex items-center justify-between mb-4">
+                      <span
+                        class="py-2 px-4 rounded-lg bg-primary/20 text-sm text-primary font-bold"
+                        >2026 - الآن</span
+                      >
+
+                      <i
+                        class="fa-solid fa-graduation-cap text-3xl text-primary"
+                      ></i>
+                    </div>
+
+                    <h3 class="text-2xl font-bold mb-2">
+                      التعلم الذاتي والمشاريع الشخصية
+                    </h3>
+
+                    <p class="text-accent text-xl mb-4">تطوير ذاتي</p>
+
+                    <p
+                      class="text-slate-600 dark:text-slate-400 leading-relaxed mb-4"
+                    >
+                      رحلة تعلم مستمرة من خلال تنفيذ مشاريع Front-End حقيقية،
+                      وبناء Portfolio احترافي، واستخدام Git وGitHub لإدارة
+                      الأكواد، مع التركيز على React وTailwind CSS وNext.js.
+                    </p>
+
+                    <div class="flex flex-wrap gap-2">
+                      <span
+                        class="px-3 py-1 bg-slate-100 dark:bg-slate-700 rounded-lg text-xs"
+                        >React</span
+                      >
+                      <span
+                        class="px-3 py-1 bg-slate-100 dark:bg-slate-700 rounded-lg text-xs"
+                        >Next.js</span
+                      >
+                      <span
+                        class="px-3 py-1 bg-slate-100 dark:bg-slate-700 rounded-lg text-xs"
+                        >Tailwind css</span
+                      >
+                      <span
+                        class="px-3 py-1 bg-slate-100 dark:bg-slate-700 rounded-lg text-xs"
+                        >Git</span
+                      >
+                      <span
+                        class="px-3 py-1 bg-slate-100 dark:bg-slate-700 rounded-lg text-xs"
+                        >GitHub</span
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="absolute w-6 h-6 rounded-full bg-primary right-1/2 transform translate-x-1/2 border-4 border-white dark:border-slate-950 z-10"
+                ></div>
+
+                <div class="w-1/2 pl-16"></div>
+              </div>
+
+              <div class="relative flex items-center mb-12">
+                <div class="w-1/2 pr-8"></div>
+
+                <div
+                  class="absolute w-6 h-6 rounded-full bg-secondary right-1/2 transform translate-x-1/2 border-4 border-white dark:border-slate-950 z-10"
+                ></div>
+
+                <div class="w-1/2 pr-8 text-right">
+                  <div
+                    class="card-right relative bg-white dark:bg-slate-800/50 p-8 backdrop-blur-sm border border-slate-200 dark:border-slate-700 rounded-2xl duration-300 transform transition-all hover:border-primary"
+                  >
+                    <div class="flex items-center justify-between mb-4">
+                      <i
+                        class="fa-solid fa-graduation-cap text-3xl text-secondary"
+                      ></i>
+
+                      <span
+                        class="py-2 px-4 rounded-lg bg-secondary/20 text-sm text-secondary font-bold"
+                        >Oct 2025 - Apr 2026</span
+                      >
+                    </div>
+
+                    <h3 class="text-2xl font-bold mb-2">
+                      دبلومة تطوير الويب Front-End
+                    </h3>
+
+                    <p class="text-accent text-xl mb-4">Route Academy</p>
+
+                    <p
+                      class="text-slate-600 dark:text-slate-400 leading-relaxed mb-4"
+                    >
+                      إتمام برنامج تدريبي احترافي علي مدار 6 شهور يغطي أساسيات
+                      ومتقدمات تطوير الويب، مع تنفيذ مشاريع عملية وتطبيق معايير
+                      كتابة الكود الاحترافية.
+                    </p>
+
+                    <div class="flex flex-wrap gap-2 justify-end">
+                      <span
+                        class="px-3 py-1 bg-slate-100 dark:bg-slate-700 rounded-lg text-xs"
+                        >React</span
+                      >
+                      <span
+                        class="px-3 py-1 bg-slate-100 dark:bg-slate-700 rounded-lg text-xs"
+                        >APIs</span
+                      >
+                      <span
+                        class="px-3 py-1 bg-slate-100 dark:bg-slate-700 rounded-lg text-xs"
+                        >Tailwind css</span
+                      >
+                      <span
+                        class="px-3 py-1 bg-slate-100 dark:bg-slate-700 rounded-lg text-xs"
+                        >Responsive Design</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="relative flex items-center mb-12">
+                <div class="w-1/2 text-right pl-8">
+                  <div
+                    class="card-left relative bg-white dark:bg-slate-800/50 p-8 backdrop-blur-sm border border-slate-200 dark:border-slate-700 rounded-2xl duration-300 transform transition-all hover:border-primary"
+                  >
+                    <div class="flex items-center justify-between mb-4">
+                      <span
+                        class="py-2 px-4 rounded-lg bg-primary/20 text-sm text-primary font-bold"
+                      >
+                        Aug 2024 - Nov 2024
+                      </span>
+
+                      <i
+                        class="fa-solid fa-graduation-cap text-3xl text-primary"
+                      ></i>
+                    </div>
+
+                    <h3 class="text-2xl font-bold mb-2">
+                      معسكر تطوير الواجهات الأمامية
+                    </h3>
+
+                    <p class="text-accent text-xl mb-4">TROSC</p>
+
+                    <p
+                      class="text-slate-600 dark:text-slate-400 leading-relaxed mb-4"
+                    >
+                      إتمام معسكر تدريبي مكثف في تطوير الواجهات الأمامية بتقدير
+                      <strong>A</strong>، مع تنفيذ مشاريع عملية باستخدام أحدث
+                      تقنيات تطوير الويب.
+                    </p>
+
+                    <div class="flex flex-wrap gap-2">
+                      <span
+                        class="px-3 py-1 bg-slate-100 dark:bg-slate-700 rounded-lg text-xs"
+                        >React.js</span
+                      >
+                      <span
+                        class="px-3 py-1 bg-slate-100 dark:bg-slate-700 rounded-lg text-xs"
+                        >JavaScript</span
+                      >
+                      <span
+                        class="px-3 py-1 bg-slate-100 dark:bg-slate-700 rounded-lg text-xs"
+                        >Tailwind CSS</span
+                      >
+                      <span
+                        class="px-3 py-1 bg-slate-100 dark:bg-slate-700 rounded-lg text-xs"
+                        >Git</span
+                      >
+                      <span
+                        class="px-3 py-1 bg-slate-100 dark:bg-slate-700 rounded-lg text-xs"
+                        >GitHub</span
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="absolute w-6 h-6 rounded-full bg-primary right-1/2 transform translate-x-1/2 border-4 border-white dark:border-slate-950 z-10"
+                ></div>
+
+                <div class="w-1/2 pl-16"></div>
+              </div>
+
+              <div class="relative flex items-center mb-12">
+                <div class="w-1/2 pr-8"></div>
+
+                <div
+                  class="absolute w-6 h-6 rounded-full bg-secondary right-1/2 transform translate-x-1/2 border-4 border-white dark:border-slate-950 z-10"
+                ></div>
+
+                <div class="w-1/2 pr-8 text-right">
+                  <div
+                    class="card-right relative bg-white dark:bg-slate-800/50 p-8 backdrop-blur-sm border border-slate-200 dark:border-slate-700 rounded-2xl duration-300 transform transition-all hover:border-primary"
+                  >
+                    <div class="flex items-center justify-between mb-4">
+                      <i
+                        class="fa-solid fa-graduation-cap text-3xl text-secondary"
+                      ></i>
+
+                      <span
+                        class="py-2 px-4 rounded-lg bg-secondary/20 text-sm text-secondary font-bold"
+                      >
+                        Jul 2024 - Aug 2024
+                      </span>
+                    </div>
+
+                    <h3 class="text-2xl font-bold mb-2">
+                      برنامج مصر الرقمية للشباب
+                    </h3>
+
+                    <p class="text-accent text-xl mb-4">
+                      المعهد القومي للاتصالات (NTI)
+                    </p>
+
+                    <p
+                      class="text-slate-600 dark:text-slate-400 leading-relaxed mb-4"
+                    >
+                      إتمام برنامج Web Design بدرجة
+                      <strong>100%</strong> والحصول على جائزة
+                      <strong>أفضل فكرة مشروع</strong> مع تنفيذ مشاريع عملية
+                      وتطبيق أساسيات تطوير الويب.
+                    </p>
+
+                    <div class="flex flex-wrap gap-2 justify-end">
+                      <span
+                        class="px-3 py-1 bg-slate-100 dark:bg-slate-700 rounded-lg text-xs"
+                        >HTML5</span
+                      >
+                      <span
+                        class="px-3 py-1 bg-slate-100 dark:bg-slate-700 rounded-lg text-xs"
+                        >CSS3</span
+                      >
+                      <span
+                        class="px-3 py-1 bg-slate-100 dark:bg-slate-700 rounded-lg text-xs"
+                        >JavaScript</span
+                      >
+                      <span
+                        class="px-3 py-1 bg-slate-100 dark:bg-slate-700 rounded-lg text-xs"
+                        >Responsive Design</span
+                      >
+                      <span
+                        class="px-3 py-1 bg-slate-100 dark:bg-slate-700 rounded-lg text-xs"
+                        >UI/UX</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-20">
+            <div
+              class="p-8 border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-slate-800/30 backdrop-blur-sm rounded-2xl text-center"
+            >
+              <div
+                class="w-16 h-16 bg-linear-to-br from-primary to-secondary rounded-2xl bg-primary flex items-center justify-center mx-auto mb-4"
+              >
+                <i class="fa-solid fa-award text-3xl text-white"></i>
+              </div>
+
+              <h3 class="text-2xl font-bold mb-2">شهادات معتمدة</h3>
+
+              <p class="text-slate-500 dark:text-slate-400">
+                AWS Certified Developer
+                <br />
+                Google UX Design Professional
+              </p>
+            </div>
+
+            <div
+              class="p-8 border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-slate-800/30 backdrop-blur-sm rounded-2xl text-center"
+            >
+              <div
+                class="w-16 h-16 bg-linear-to-br from-secondary to-accent rounded-2xl bg-secondary flex items-center justify-center mx-auto mb-4"
+              >
+                <i class="fa-solid fa-users text-3xl text-white"></i>
+              </div>
+
+              <h3 class="text-2xl font-bold mb-2">فرق العمل</h3>
+
+              <p class="text-slate-500 dark:text-slate-400">
+                خبرة في العمل مع فرق متعددة
+                <br />
+                التخصصات والثقافات
+              </p>
+            </div>
+
+            <div
+              class="p-8 border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-slate-800/30 backdrop-blur-sm rounded-2xl text-center"
+            >
+              <div
+                class="w-16 h-16 bg-linear-to-br from-accent to-primary rounded-2xl bg-accent flex items-center justify-center mx-auto mb-4"
+              >
+                <i class="fa-solid fa-lightbulb text-3xl text-white"></i>
+              </div>
+
+              <h3 class="text-2xl font-bold mb-2">الابتكار</h3>
+
+              <p class="text-slate-500 dark:text-slate-400">
+                دائماً أبحث عن طرق جديدة
+                <br />
+                لحل المشاكل التقنية
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="py-24 px-4 md:px-8 bg-white dark:bg-slate-900/50 relative overflow-h"
+        id="testimonials"
+      >
+        <div
+          class="absolute w-96 h-96 rounded-full top-0 left-1/3 bg-accent filter blur-3xl opacity-10"
+        ></div>
+
+        <div class="container mx-auto max-w-7xl relative z-10">
+          <div class="text-center mb-16">
+            <p class="text-accent text-lg font-medium mb-3 block">
+              آراء العملاء
+            </p>
+
+            <h2 class="text-5xl font-black mb-4">
+              ماذا يقول
+              <span
+                class="bg-clip-text text-transparent bg-linear-to-l from-accent to-primary"
+                >العملاء
+              </span>
+            </h2>
+
+            <div
+              class="w-24 h-1.5 mx-auto rounded-full bg-linear-to-l from-accent to-primary"
+            ></div>
+          </div>
+
+          <div class="relative mb-12 px-2 lg:px-8">
+            <button
+              class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 w-12 h-12 bg-white/90 dark:bg-slate-800/90 hover:bg-primary text-slate-900 dark:text-white rounded-full hidden md:flex items-center justify-center transition-all duration-300 hover:scale-110 hover:text-white z-10 border border-slate-300 dark:border-slate-700 cursor-pointer"
+              id="next-testimonial"
+            >
+              <i class="fa-solid fa-angle-left"></i>
+            </button>
+
+            <div class="overflow-hidden">
+              <div
+                class="slider flex items-stretch transition-transform translate-x-0 duration-500 ease-in-out"
+              >
+                <div
+                  class="testimonial-card shrink-0 w-full sm:w-1/2 lg:w-1/3 px-0 lg:px-4 flex flex-col self-stretch"
+                >
+                  <div
+                    class="bg-slate-50 dark:bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 border border-slate-200 dark:border-slate-700 hover:border-accent transition-all duration-300 flex flex-col h-full"
+                  >
+                    <div class="flex items-center mb-6">
+                      <img
+                        src="./assets/images/avatar-1-BQH9KX0X.webp"
+                        class="w-16 h-16 rounded-full border-2 border-accent object-cover ml-4"
+                        alt="صورة أحد العملاء"
+                      />
+
+                      <div>
+                        <h4 class="text-xl font-bold">أحمد السعيد</h4>
+                        <p class="text-slate-500 dark:text-slate-400">
+                          مدير شركة التقنية الحديثة
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="flex mb-4">
+                      <i class="fa-solid fa-star text-yellow-400"></i>
+                      <i class="fa-solid fa-star text-yellow-400"></i>
+                      <i class="fa-solid fa-star text-yellow-400"></i>
+                      <i class="fa-solid fa-star text-yellow-400"></i>
+                      <i class="fa-solid fa-star text-yellow-400"></i>
+                    </div>
+
+                    <p
+                      class="text-slate-600 dark:text-slate-300 leading-relaxed text-lg grow"
+                    >
+                      "شغل أحمد معانا كان حاجة تانية خالص. قدم حلول مبتكرة لكل
+                      المشاكل اللي واجهتنا. الموقع اللي عمله عدى كل توقعاتنا في
+                      التصميم والأداء."
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="testimonial-card shrink-0 w-full sm:w-1/2 lg:w-1/3 px-0 lg:px-4 flex flex-col self-stretch"
+                >
+                  <div
+                    class="bg-slate-50 dark:bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 border border-slate-200 dark:border-slate-700 hover:border-accent transition-all duration-300 flex flex-col h-full"
+                  >
+                    <div class="flex items-center mb-6">
+                      <img
+                        src="./assets/images/avatar-2-CyFiVXIH.webp"
+                        class="w-16 h-16 rounded-full border-2 border-accent object-cover ml-4"
+                        alt="صورة أحد العملاء"
+                      />
+
+                      <div>
+                        <h4 class="text-xl font-bold">محمد خالد</h4>
+                        <p class="text-slate-500 dark:text-slate-400">
+                          مؤسس متجر إلكتروني
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="flex mb-4">
+                      <i class="fa-solid fa-star text-yellow-400"></i>
+                      <i class="fa-solid fa-star text-yellow-400"></i>
+                      <i class="fa-solid fa-star text-yellow-400"></i>
+                      <i class="fa-solid fa-star text-yellow-400"></i>
+                      <i class="fa-solid fa-star text-yellow-400"></i>
+                    </div>
+
+                    <p
+                      class="text-slate-600 dark:text-slate-300 leading-relaxed text-lg grow"
+                    >
+                      "التعامل كان احترافي جدًا من البداية للنهاية. المشروع
+                      اتسلم في الوقت المحدد والأداء كان ممتاز على جميع الأجهزة."
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="testimonial-card shrink-0 w-full sm:w-1/2 lg:w-1/3 px-0 lg:px-4 flex flex-col self-stretch"
+                >
+                  <div
+                    class="bg-slate-50 dark:bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 border border-slate-200 dark:border-slate-700 hover:border-accent transition-all duration-300 flex flex-col h-full"
+                  >
+                    <div class="flex items-center mb-6">
+                      <img
+                        src="./assets/images/avatar-3-CmoFRkys.webp"
+                        class="w-16 h-16 rounded-full border-2 border-accent object-cover ml-4"
+                        alt="صورة أحد العملاء"
+                      />
+
+                      <div>
+                        <h4 class="text-xl font-bold">محمد محمود</h4>
+                        <p class="text-slate-500 dark:text-slate-400">
+                          مدير التسويق الرقمي
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="flex mb-4">
+                      <i class="fa-solid fa-star text-yellow-400"></i>
+                      <i class="fa-solid fa-star text-yellow-400"></i>
+                      <i class="fa-solid fa-star text-yellow-400"></i>
+                      <i class="fa-solid fa-star text-yellow-400"></i>
+                      <i class="fa-solid fa-star text-yellow-400"></i>
+                    </div>
+
+                    <p
+                      class="text-slate-600 dark:text-slate-300 leading-relaxed text-lg grow"
+                    >
+                      "الاهتمام بأدق التفاصيل فرق معانا جدًا. التصميم احترافي
+                      وسهل الاستخدام، وده انعكس بشكل واضح على تجربة العملاء."
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="testimonial-card shrink-0 w-full sm:w-1/2 lg:w-1/3 px-0 lg:px-4 flex flex-col self-stretch"
+                >
+                  <div
+                    class="bg-slate-50 dark:bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 border border-slate-200 dark:border-slate-700 hover:border-accent transition-all duration-300 flex flex-col h-full"
+                  >
+                    <div class="flex items-center mb-6">
+                      <img
+                        src="./assets/images/avatar-4-CI2X8fvY.webp"
+                        class="w-16 h-16 rounded-full border-2 border-accent object-cover ml-4"
+                        alt="صورة أحد العملاء"
+                      />
+
+                      <div>
+                        <h4 class="text-xl font-bold">محمود حسن</h4>
+                        <p class="text-slate-500 dark:text-slate-400">
+                          صاحب شركة ناشئة
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="flex mb-4">
+                      <i class="fa-solid fa-star text-yellow-400"></i>
+                      <i class="fa-solid fa-star text-yellow-400"></i>
+                      <i class="fa-solid fa-star text-yellow-400"></i>
+                      <i class="fa-solid fa-star text-yellow-400"></i>
+                      <i class="fa-solid fa-star text-yellow-400"></i>
+                    </div>
+
+                    <p
+                      class="text-slate-600 dark:text-slate-300 leading-relaxed text-lg grow"
+                    >
+                      "أكثر حاجة عجبتني هي سرعة التنفيذ والالتزام بالمواعيد. أي
+                      تعديل كنا بنطلبه كان بيتنفذ بسرعة وبدقة."
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="testimonial-card shrink-0 w-full sm:w-1/2 lg:w-1/3 px-0 lg:px-4 flex flex-col self-stretch"
+                >
+                  <div
+                    class="bg-slate-50 dark:bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 border border-slate-200 dark:border-slate-700 hover:border-accent transition-all duration-300 flex flex-col h-full"
+                  >
+                    <div class="flex items-center mb-6">
+                      <img
+                        src="./assets/images/avatar-5-BF_5vAuR.webp"
+                        class="w-16 h-16 rounded-full border-2 border-accent object-cover ml-4"
+                        alt="صورة أحد العملاء"
+                      />
+
+                      <div>
+                        <h4 class="text-xl font-bold">نور أحمد</h4>
+                        <p class="text-slate-500 dark:text-slate-400">
+                          مصمم UI/UX
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="flex mb-4">
+                      <i class="fa-solid fa-star text-yellow-400"></i>
+                      <i class="fa-solid fa-star text-yellow-400"></i>
+                      <i class="fa-solid fa-star text-yellow-400"></i>
+                      <i class="fa-solid fa-star text-yellow-400"></i>
+                      <i class="fa-solid fa-star text-yellow-400"></i>
+                    </div>
+
+                    <p
+                      class="text-slate-600 dark:text-slate-300 leading-relaxed text-lg grow"
+                    >
+                      "التعاون كان سلس جدًا، والنتيجة النهائية طلعت أفضل مما كنت
+                      متوقعه. أنصح بالتعامل معاه لأي مشروع احترافي."
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="testimonial-card shrink-0 w-full sm:w-1/2 lg:w-1/3 px-0 lg:px-4 flex flex-col self-stretch"
+                >
+                  <div
+                    class="bg-slate-50 dark:bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 border border-slate-200 dark:border-slate-700 hover:border-accent transition-all duration-300 flex flex-col h-full"
+                  >
+                    <div class="flex items-center mb-6">
+                      <img
+                        src="./assets/images/avatar-6-IIG--UcM.webp"
+                        class="w-16 h-16 rounded-full border-2 border-accent object-cover ml-4"
+                        alt="صورة أحد العملاء"
+                      />
+
+                      <div>
+                        <h4 class="text-xl font-bold">إبراهيم علي</h4>
+                        <p class="text-slate-500 dark:text-slate-400">
+                          مدير تطوير الأعمال
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="flex mb-4">
+                      <i class="fa-solid fa-star text-yellow-400"></i>
+                      <i class="fa-solid fa-star text-yellow-400"></i>
+                      <i class="fa-solid fa-star text-yellow-400"></i>
+                      <i class="fa-solid fa-star text-yellow-400"></i>
+                      <i class="fa-solid fa-star text-yellow-400"></i>
+                    </div>
+
+                    <p
+                      class="text-slate-600 dark:text-slate-300 leading-relaxed text-lg grow"
+                    >
+                      "من أفضل التجارب اللي مرينا بيها. الجودة، سرعة الأداء،
+                      وسهولة التواصل خلت تنفيذ المشروع يتم بأفضل صورة ممكنة."
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button
+              class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 w-12 h-12 bg-white/90 dark:bg-slate-800/90 hover:bg-primary text-slate-900 dark:text-white rounded-full hidden md:flex items-center justify-center transition-all duration-300 hover:scale-110 hover:text-white z-10 border border-slate-300 dark:border-slate-700 cursor-pointer"
+              id="prev-testimonial"
+            >
+              <i class="fa-solid fa-angle-right"></i>
+            </button>
+          </div>
+
+          <div class="flex justify-center gap-3 mb-12">
+            <button
+              class="pagination-dot w-3 h-3 rounded-full bg-slate-400 transition-all duration-300 hover:scale-125 cursor-pointer"
+              data-index="0"
+            ></button>
+            <button
+              class="pagination-dot w-3 h-3 rounded-full bg-slate-400 transition-all duration-300 hover:scale-125 cursor-pointer"
+              data-index="1"
+            ></button>
+            <button
+              class="pagination-dot w-3 h-3 rounded-full bg-slate-400 transition-all duration-300 hover:scale-125 cursor-pointer"
+              data-index="2"
+            ></button>
+            <button
+              class="pagination-dot w-3 h-3 rounded-full bg-slate-400 transition-all duration-300 hover:scale-125 cursor-pointer"
+              data-index="3"
+            ></button>
+          </div>
+
+          <div
+            class="bg-linear-to-r from-primary via-secondary to-accent p-1 rounded-3xl"
+          >
+            <div
+              class="bg-white dark:bg-slate-900 rounded-3xl p-12 text-center"
+            >
+              <h3 class="text-3xl font-bold mb-4">جاهز تبدأ مشروعك؟</h3>
+
+              <p
+                class="text-xl text-slate-600 dark:text-slate-300 mb-8 max-w-2xl mx-auto"
+              >
+                يلا نشتغل سوا عشان نحول أفكارك لواقع مبهر
+              </p>
+
+              <div class="flex justify-center flex-wrap gap-4">
+                <a
+                  href="#contact"
+                  class="bg-linear-to-r from-primary to-secondary text-white px-10 py-4 rounded-xl font-bold hover:shadow-xl hover:shadow-primary/30 transition-all duration-300"
+                >
+                  تواصل معي الآن
+                </a>
+
+                <a
+                  href="#portfolio"
+                  class="border-2 border-primary dark:border-white text-primary dark:text-white px-10 py-4 rounded-xl font-bold hover:bg-primary hover:text-white dark:hover:bg-white dark:hover:text-slate-900 transition-all duration-300"
+                >
+                  شاهد المزيد من الأعمال
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="statistics-section"
+        class="py-24 px-4 md:px-8 bg-slate-50 dark:bg-transparent relative overflow-hidden"
+      >
+        <div class="container mx-auto max-w-7xl relative z-10">
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div class="text-center">
+              <div
+                class="w-24 h-24 bg-linear-to-br from-primary to-secondary rounded-2xl flex items-center justify-center mx-auto mb-4"
+              >
+                <i class="fa-solid fa-diagram-project text-4xl text-white"></i>
+              </div>
+
+              <div
+                class="text-5xl font-black bg-linear-to-r from-primary to-secondary bg-clip-text text-transparent mb-2"
+              >
+                5+
+              </div>
+
+              <p class="text-slate-400 text-lg">مشروع مكتمل</p>
+            </div>
+
+            <div class="text-center">
+              <div
+                class="w-24 h-24 bg-linear-to-br from-secondary to-accent rounded-2xl flex items-center justify-center mx-auto mb-4"
+              >
+                <i class="fa-solid fa-award text-4xl text-white"></i>
+              </div>
+
+              <div
+                class="text-5xl font-black bg-linear-to-r from-secondary to-accent bg-clip-text text-transparent mb-2"
+              >
+                3+
+              </div>
+
+              <p class="text-slate-400 text-lg">شهادات معتمدة</p>
+            </div>
+
+            <div class="text-center">
+              <div
+                class="w-24 h-24 bg-linear-to-br from-accent to-primary rounded-2xl flex items-center justify-center mx-auto mb-4"
+              >
+                <i class="fa-solid fa-graduation-cap text-4xl text-white"></i>
+              </div>
+
+              <div
+                class="text-5xl font-black bg-linear-to-r from-accent to-primary bg-clip-text text-transparent mb-2"
+              >
+                4+
+              </div>
+
+              <p class="text-slate-400 text-lg">برامج تدريبيه</p>
+            </div>
+
+            <div class="text-center">
+              <div
+                class="w-24 h-24 bg-linear-to-br from-primary to-accent rounded-2xl flex items-center justify-center mx-auto mb-4"
+              >
+                <i class="fa-solid fa-trophy text-4xl text-white"></i>
+              </div>
+
+              <div
+                class="text-5xl font-black bg-linear-to-r from-primary to-accent bg-clip-text text-transparent mb-2"
+              >
+                1+
+              </div>
+
+              <p class="text-slate-400 text-lg">جائزة وتقدير</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="py-24 px-4 md:px-8 bg-white dark:bg-slate-900/50 relative overflow-hidden"
+        id="contact"
+      >
+        <div
+          class="absolute w-96 h-96 rounded-full bottom-0 right-1/4 bg-primary filter blur-3xl opacity-10"
+        ></div>
+
+        <div class="container mx-auto max-w-7xl relative z-10">
+          <div class="text-center mb-16">
+            <p class="text-primary text-lg font-medium mb-3 block">تواصل معي</p>
+
+            <h2 class="text-5xl font-black mb-4">
+              يلا نبدأ
+              <span
+                class="bg-clip-text text-transparent bg-linear-to-l from-primary to-secondary"
+              >
+                مشروعك</span
+              >
+            </h2>
+
+            <div
+              class="w-24 h-1.5 mx-auto rounded-full bg-linear-to-l from-primary to-secondary"
+            ></div>
+
+            <p
+              class="text-xl text-slate-600 dark:text-slate-300 mt-6 max-w-2xl mx-auto"
+            >
+              عندك فكرة مشروع؟ تعالى نتكلم ونحولها لواقع
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <div>
+              <a
+                href="mailto:amoa220504@gmail.com"
+                class="group block p-6 mb-8 bg-slate-50 dark:bg-slate-800/50 backdrop-blur-sm rounded-2xl border border-slate-200 dark:border-slate-700 hover:border-primary hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+              >
+                <div class="flex items-center gap-5">
+                  <div
+                    class="w-16 h-16 bg-linear-to-br from-primary to-secondary rounded-2xl flex items-center justify-center shadow-lg shadow-primary/30 text-white group-hover:scale-110 transition-transform duration-300 shrink-0"
+                  >
+                    <i class="fa-solid fa-envelope text-3xl"></i>
+                  </div>
+
+                  <div>
+                    <h3
+                      class="text-lg font-bold text-slate-500 dark:text-slate-400 mb-1"
+                    >
+                      البريد الإلكتروني
+                    </h3>
+
+                    <p
+                      class="text-lg font-bold text-slate-800 dark:text-white"
+                      dir="rtl"
+                    >
+                      amoa220504@gmail.com
+                    </p>
+
+                    <p class="text-sm text-slate-400 mt-1">
+                      جاهز للرد خلال 24 ساعة
+                    </p>
+                  </div>
+                </div>
+              </a>
+
+              <a
+                href="tel:+201090695824"
+                class="group block p-6 mb-8 bg-slate-50 dark:bg-slate-800/50 backdrop-blur-sm rounded-2xl border border-slate-200 dark:border-slate-700 hover:border-secondary hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+              >
+                <div class="flex items-center gap-5">
+                  <div
+                    class="w-16 h-16 bg-linear-to-br from-secondary to-accent rounded-2xl flex items-center justify-center shadow-lg shadow-primary/30 text-white group-hover:scale-110 transition-transform duration-300 shrink-0"
+                  >
+                    <i class="fa-solid fa-envelope text-3xl"></i>
+                  </div>
+
+                  <div>
+                    <h3
+                      class="text-lg font-bold text-slate-500 dark:text-slate-400 mb-1"
+                    >
+                      رقم الهاتف
+                    </h3>
+
+                    <p
+                      class="text-lg font-bold text-slate-800 dark:text-white"
+                      dir="ltr"
+                    >
+                      +20 10 9069 5824
+                    </p>
+
+                    <p class="text-sm text-slate-400 mt-1">
+                      متاح من 9 صباحاً - 5 مساءً
+                    </p>
+                  </div>
+                </div>
+              </a>
+
+              <div
+                class="group block p-6 mb-8 bg-slate-50 dark:bg-slate-800/50 backdrop-blur-sm rounded-2xl border border-slate-200 dark:border-slate-700 hover:border-accent hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+              >
+                <div class="flex items-center gap-5">
+                  <div
+                    class="w-16 h-16 bg-linear-to-br from-accent to-primary rounded-2xl flex items-center justify-center shadow-lg shadow-primary/30 text-white group-hover:scale-110 transition-transform duration-300 shrink-0"
+                  >
+                    <i class="fa-solid fa-location-dot text-3xl"></i>
+                  </div>
+
+                  <div>
+                    <h3
+                      class="text-lg font-bold text-slate-500 dark:text-slate-400 mb-1"
+                    >
+                      الموقع
+                    </h3>
+
+                    <p class="text-lg font-bold text-slate-800 dark:text-white">
+                      قنــا، مصر
+                    </p>
+
+                    <p class="text-sm text-slate-400 mt-1">متاح للعمل عن بعد</p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="p-1 rounded-2xl bg-linear-to-r from-primary via-secondary to-accent"
+              >
+                <div class="bg-white dark:bg-slate-900 rounded-2xl p-8">
+                  <h3
+                    class="font-bold text-center text-2xl text-slate-800 dark:text-white mb-4"
+                  >
+                    تابعني على
+                  </h3>
+
+                  <div class="flex justify-center gap-4">
+                    <a
+                      href="https://github.com/AhmedMohammed52"
+                      class="w-14 h-14 rounded-2xl bg-slate-200 dark:bg-slate-800 flex justify-center items-center transition-all duration-300 hover:bg-primary transform hover:scale-110 group"
+                    >
+                      <i
+                        class="fa-brands fa-github text-2xl text-slate-700 dark:text-white group-hover:text-white"
+                      ></i>
+                    </a>
+
+                    <a
+                      href="https://www.linkedin.com/in/ahmed-mohammed-99a121267/"
+                      class="w-14 h-14 rounded-2xl bg-slate-200 dark:bg-slate-800 flex justify-center items-center transition-all duration-300 hover:bg-primary transform hover:scale-110 group"
+                    >
+                      <i
+                        class="fa-brands fa-linkedin text-2xl text-slate-700 dark:text-white group-hover:text-white"
+                      ></i>
+                    </a>
+
+                    <a
+                      href=""
+                      class="w-14 h-14 rounded-2xl bg-slate-200 dark:bg-slate-800 flex justify-center items-center transition-all duration-300 hover:bg-primary transform hover:scale-110 group"
+                    >
+                      <i
+                        class="fa-brands fa-twitter text-2xl text-slate-700 dark:text-white group-hover:text-white"
+                      ></i>
+                    </a>
+                    <a
+                      href=""
+                      class="w-14 h-14 rounded-2xl bg-slate-200 dark:bg-slate-800 flex justify-center items-center transition-all duration-300 hover:bg-primary transform hover:scale-110 group"
+                    >
+                      <i
+                        class="fa-brands fa-dribbble text-2xl text-slate-700 dark:text-white group-hover:text-white"
+                      ></i>
+                    </a>
+                    <a
+                      href=""
+                      class="w-14 h-14 rounded-2xl bg-slate-200 dark:bg-slate-800 flex justify-center items-center transition-all duration-300 hover:bg-primary transform hover:scale-110 group"
+                    >
+                      <i
+                        class="fa-brands fa-behance text-2xl text-slate-700 dark:text-white group-hover:text-white"
+                      ></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-slate-50 dark:bg-slate-800/50 backdrop-blur-sm border border-slate-200 dark:border-slate-700 p-8 rounded-2xl"
+            >
+              <form>
+                <div class="mb-6">
+                  <label
+                    for="contact-name"
+                    class="block mb-2 font-medium text-lg"
+                    >الاسم الكامل</label
+                  >
+
+                  <input
+                    type="text"
+                    id="contact-name"
+                    placeholder="أدخل اسمك الكامل"
+                    class="w-full bg-white dark:bg-slate-700/50 border border-slate-300 dark:border-slate-600 rounded-xl text-slate-600 dark:text-white px-6 py-4 placeholder:slate-500 dark:placeholder:slate-400 focus:outline-none focus:border-primary transition-colors"
+                  />
+                </div>
+
+                <div class="mb-6">
+                  <label
+                    for="contact-email"
+                    class="block mb-2 font-medium text-lg"
+                    >البريد الإلكتروني</label
+                  >
+
+                  <input
+                    type="email"
+                    id="contact-email"
+                    placeholder="example@email.com"
+                    class="w-full bg-white dark:bg-slate-700/50 border border-slate-300 dark:border-slate-600 rounded-xl text-slate-600 dark:text-white px-6 py-4 placeholder:slate-500 dark:placeholder:slate-400 focus:outline-none focus:border-primary transition-colors"
+                  />
+                </div>
+
+                <div class="mb-6">
+                  <label
+                    for="contact-phone"
+                    class="block mb-2 font-medium text-lg"
+                    >رقم الهاتف</label
+                  >
+
+                  <input
+                    type="tel"
+                    id="contact-phone"
+                    placeholder="+20 10 XXXX XXXX"
+                    class="w-full bg-white dark:bg-slate-700/50 border border-slate-300 dark:border-slate-600 rounded-xl text-slate-600 dark:text-white px-6 py-4 placeholder:slate-500 dark:placeholder:slate-400 focus:outline-none focus:border-primary transition-colors"
+                  />
+                </div>
+
+                <div class="mb-6">
+                  <label class="block mb-2 font-medium text-lg"
+                    >نوع المشروع</label
+                  >
+
+                  <div class="custom-select-wrapper relative">
+                    <div
+                      class="custom-select w-full bg-white dark:bg-slate-700/50 border border-slate-300 dark:border-slate-600 rounded-xl px-6 py-4 text-slate-800 dark:text-white focus:border-primary transition-all cursor-pointer flex justify-between items-center hover:border-primary"
+                      data-name="project-type"
+                    >
+                      <span
+                        class="selected-text text-slate-500 dark:text-slate-400"
+                        >اختر نوع المشروع</span
+                      >
+
+                      <i
+                        class="fa-solid fa-chevron-down transition-transform duration-300 text-slate-600 dark:text-slate-400"
+                      ></i>
+                    </div>
+
+                    <div
+                      class="custom-options absolute w-full bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-600 rounded-xl mt-2 shadow-2xl z-50 hidden overflow-hidden"
+                    >
+                      <div
+                        class="custom-option px-6 py-3 hover:bg-primary/20 cursor-pointer transition-colors text-slate-700 dark:text-slate-200"
+                        data-value="موقع ويب"
+                      >
+                        موقع ويب
+                      </div>
+
+                      <div
+                        class="custom-option px-6 py-3 hover:bg-primary/20 cursor-pointer transition-colors text-slate-700 dark:text-slate-200"
+                        data-value="تطبيق ويب"
+                      >
+                        تطبيق ويب
+                      </div>
+
+                      <div
+                        class="custom-option px-6 py-3 hover:bg-primary/20 cursor-pointer transition-colors text-slate-700 dark:text-slate-200"
+                        data-value="تطبيق جوال"
+                      >
+                        تطبيق جوال
+                      </div>
+
+                      <div
+                        class="custom-option px-6 py-3 hover:bg-primary/20 cursor-pointer transition-colors text-slate-700 dark:text-slate-200"
+                        data-value="تصميم UI/UX"
+                      >
+                        تصميم UI/UX
+                      </div>
+
+                      <div
+                        class="custom-option px-6 py-3 hover:bg-primary/20 cursor-pointer transition-colors text-slate-700 dark:text-slate-200"
+                        data-value="استشارة تقنية"
+                      >
+                        استشارة تقنية
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mb-6">
+                  <label class="block mb-2 font-medium text-lg"
+                    >الميزانية المتوقعة</label
+                  >
+
+                  <div class="custom-select-wrapper relative">
+                    <div
+                      class="custom-select w-full bg-white dark:bg-slate-700/50 border border-slate-300 dark:border-slate-600 rounded-xl px-6 py-4 text-slate-800 dark:text-white focus:border-primary transition-all cursor-pointer flex justify-between items-center hover:border-primary"
+                      data-name="budget"
+                    >
+                      <span
+                        class="selected-text text-slate-500 dark:text-slate-400"
+                        >اختر الميزانية</span
+                      >
+
+                      <i
+                        class="fa-solid fa-chevron-down transition-transform duration-300 text-slate-600 dark:text-slate-400"
+                      ></i>
+                    </div>
+
+                    <div
+                      class="custom-options absolute w-full bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-600 rounded-xl mt-2 shadow-2xl z-50 hidden overflow-hidden"
+                    >
+                      <div
+                        class="custom-option px-6 py-3 hover:bg-secondary/20 cursor-pointer transition-colors text-slate-700 dark:text-slate-200"
+                        data-value="أقل من 20,000 جنيه"
+                      >
+                        أقل من 20,000 جنيه
+                      </div>
+
+                      <div
+                        class="custom-option px-6 py-3 hover:bg-secondary/20 cursor-pointer transition-colors text-slate-700 dark:text-slate-200"
+                        data-value="20,000 - 50,000 جنيه"
+                      >
+                        20,000 - 50,000 جنيه
+                      </div>
+
+                      <div
+                        class="custom-option px-6 py-3 hover:bg-secondary/20 cursor-pointer transition-colors text-slate-700 dark:text-slate-200"
+                        data-value="50,000 - 100,000 جنيه"
+                      >
+                        50,000 - 100,000 جنيه
+                      </div>
+
+                      <div
+                        class="custom-option px-6 py-3 hover:bg-secondary/20 cursor-pointer transition-colors text-slate-700 dark:text-slate-200"
+                        data-value="أكثر من 100,000 جنيه"
+                      >
+                        أكثر من 100,000 جنيه
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mb-6">
+                  <label class="block mb-2 font-medium text-lg"
+                    >تفاصيل المشروع</label
+                  >
+
+                  <textarea
+                    class="w-full bg-white dark:bg-slate-700/50 border border-slate-300 dark:border-slate-600 rounded-xl px-6 py-4 text-slate-800 dark:text-white placeholder-slate-500 dark:placeholder-slate-400 focus:outline-none focus:border-primary transition-colors resize-none"
+                    rows="5"
+                    placeholder="احكيلي تفاصيل مشروعك..."
+                    id="contact-message"
+                  ></textarea>
+                </div>
+
+                <button
+                  type="submit"
+                  class="w-full cursor-pointer bg-linear-to-r from-primary to-secondary py-4 rounded-xl text-lg font-bold text-white hover:shadow-2xl hover:shadow-primary/50 transition-all duration-300 transform hover:scale-105"
+                >
+                  <i class="fa-solid fa-paper-plane me-2"></i>
+                  ابعت الرسالة
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <button
+      class="hidden fixed left-8 bottom-8 w-14 h-14 rounded-full flex justify-center items-center bg-linear-to-br from-primary to-accent hover:from-secondary hover:to-primary text-white shadow-lg hover:shadow-2xl hover:shadow-primary/50 duration-300 cursor-pointer transition-all hover:scale-110 group z-50 opacity-100 visible"
+      id="back-to-top"
+    >
+      <i
+        class="fa-solid fa-rocket text-2xl transform -rotate-45 transition-transform duration-300 group-hover:-translate-y-0.75"
+      ></i>
+    </button>
+
+    <footer
+      class="bg-slate-100 dark:bg-slate-950 py-16 px-4 md:px-8 border-t border-slate-200 dark:border-slate-800"
+      id="footer"
+    >
+      <div class="container mx-auto max-w-7xl">
+        <div class="grid grid-cols-1 md:grid-cols-4 mb-12 gap-12">
+          <div class="col-span-1 md:col-span-2">
+            <div class="flex items-center gap-3 mb-6">
+              <div
+                class="w-9 h-9 md:w-12 md:h-12 rounded-md md:rounded-lg flex justify-center items-center bg-linear-to-br from-primary to-secondary"
+              >
+                <i class="fa-solid fa-code text-white text-sm md:text-xl"></i>
+              </div>
+
+              <span
+                class="text-lg md:text-2xl font-bold bg-linear-to-r from-primary to-secondary bg-clip-text text-transparent"
+                >أحمد محمد
+              </span>
+            </div>
+
+            <p
+              class="text-slate-500 dark:text-slate-400 text-lg mb-8 leading-relaxed"
+            >
+              أؤمن بأن البرمجة فن. هدفي مش بس كتابة كود، بل خلق تجربة مستخدم
+              سلسة بتسيب أثر. بدمج التصميم الجمالي مع الأداء القوي عشان أقدم
+              منتج نهائي متكامل.
+            </p>
+
+            <div>
+              <a
+                href="./assets/cv/Ahmed_Mohammed_Resume.pdf"
+                download="Ahmed_Mohammed_Resume.pdf"
+                class="inline-flex items-center gap-4 px-5 py-4 border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 rounded-xl transition-all duration-300 group hover:border-primary hover:shadow-lg hover:-translate-y-1 w-full md:w-auto"
+              >
+                <div
+                  class="w-12 h-12 rounded-lg flex items-center justify-center bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white duration-300 transition-colors"
+                >
+                  <i class="fa-solid fa-file-download text-xl"></i>
+                </div>
+
+                <div class="text-right">
+                  <span
+                    class="block text-xs text-slate-500 dark:text-slate-400 mb-1"
+                    >تعرف علي خبراتي</span
+                  >
+
+                  <span
+                    class="block text-slate-800 dark:text-white font-bold text-lg"
+                    >حمل السيرة الذاتية (CV)</span
+                  >
+                </div>
+
+                <i
+                  class="fa-solid fa-arrow-left text-slate-300 mr-auto group-hover:text-primary transition-colors"
+                ></i>
+              </a>
+
+              <div class="flex items-center gap-3 px-2 mt-6">
+                <span class="relative h-3 w-3 flex">
+                  <span
+                    class="animate-ping absolute inline-flex h-full w-full bg-emerald-400 opacity-75 rounded-full"
+                  ></span>
+
+                  <span
+                    class="relative inline-flex w-3 h-3 bg-emerald-500 rounded-full"
+                  ></span>
+                </span>
+
+                <p class="text-sm text-slate-500 dark:text-slate-400">
+                  أعمل حالياً على:
+                  <span
+                    class="font-bold text-slate-700 dark:text-white border-b-2 border-emerald-500/30"
+                  >
+                    بناء متجر إلكتروني احترافي
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="text-xl font-bold mb-6">روابط سريعة</h3>
+
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="#hero"
+                  class="text-slate-500 dark:text-slate-400 hover:text-primary transition-colors text-lg"
+                  >الرئيسية</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="#about"
+                  class="text-slate-500 dark:text-slate-400 hover:text-primary transition-colors text-lg"
+                  >عني</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="#portfolio"
+                  class="text-slate-500 dark:text-slate-400 hover:text-primary transition-colors text-lg"
+                >
+                  الأعمال</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="#experience"
+                  class="text-slate-500 dark:text-slate-400 hover:text-primary transition-colors text-lg"
+                  >الخبرة</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="#testimonials"
+                  class="text-slate-500 dark:text-slate-400 hover:text-primary transition-colors text-lg"
+                  >التوصيات
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#contact"
+                  class="text-slate-500 dark:text-slate-400 hover:text-primary transition-colors text-lg"
+                  >تواصل
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-xl font-bold mb-6">الخدمات</h3>
+
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="#"
+                  class="text-slate-500 dark:text-slate-400 hover:text-primary transition-colors text-lg"
+                  >تطوير الويب</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  class="text-slate-500 dark:text-slate-400 hover:text-primary transition-colors text-lg"
+                  >تطوير التطبيقات</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  class="text-slate-500 dark:text-slate-400 hover:text-primary transition-colors text-lg"
+                  >تصميم UI/UX</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  class="text-slate-500 dark:text-slate-400 hover:text-primary transition-colors text-lg"
+                  >الاستشارات التقنية</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  class="text-slate-500 dark:text-slate-400 hover:text-primary transition-colors text-lg"
+                  >تحسين الأداء</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  class="text-slate-500 dark:text-slate-400 hover:text-primary transition-colors text-lg"
+                  >الصيانة والدعم</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="border-t border-slate-200 dark:border-slate-800 pt-8">
+          <div class="flex flex-col md:flex-row justify-between items-center">
+            <p class="text-slate-500 dark:text-slate-400 text-lg mb-4 md:mb-0">
+              © 2026 أحمد محمد. جميع الحقوق محفوظة.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./src/js/main.js"></script>
+  </body>
+</html>

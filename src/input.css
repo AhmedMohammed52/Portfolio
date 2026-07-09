@@ -1,0 +1,149 @@
+@import "tailwindcss";
+@variant dark (&:where(.dark, .dark *));
+
+
+:root {
+  --color-primary: #6366f1;
+  --color-secondary: #8b5cf6;
+  --color-accent: #a855f7;
+
+  --font-alexandria: "Alexandria", sans-serif;
+  --font-cairo: Cairo, sans-serif;
+  --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+@theme {
+  --color-primary: #6366f1;
+  --color-secondary: #8b5cf6;
+  --color-accent: #a855f7;
+
+  --font-alexandria: "Alexandria", sans-serif;
+  --font-cairo: Cairo, sans-serif;
+  --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+}
+.font-alexandria {
+  font-family: Alexandria, sans-serif;
+}
+.font-tajawal {
+  font-family: Tajawal, sans-serif;
+}
+.font-cairo {
+  font-family: Cairo, sans-serif;
+}
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+#desktop-menu a::before {
+  transform: scaleX(0);
+}
+#mobile-menu a::before {
+  transform: scaleX(0);
+}
+
+#desktop-menu a.active,
+#mobile-menu a.active {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+#desktop-menu a.active::before {
+  transform: scaleX(1);
+}
+
+#mobile-menu a.active::before {
+  transform: scaleX(1);
+}
+
+.font-option.active {
+  border-color: var(--color-primary);
+}
+
+#sidebar .overflow-y-auto::-webkit-scrollbar {
+  width: 6px;
+}
+#sidebar .overflow-y-auto::-webkit-scrollbar-track {
+  background: transparent;
+}
+#sidebar .overflow-y-auto::-webkit-scrollbar-thumb {
+  background-color: #cbd5e1;
+  border-radius: 10px;
+}
+#sidebar .overflow-y-auto::-webkit-scrollbar-thumb:hover {
+  background-color: #94a3b8;
+}
+.dark #sidebar .overflow-y-auto::-webkit-scrollbar-thumb {
+  background-color: #334155;
+}
+.dark #sidebar .overflow-y-auto::-webkit-scrollbar-thumb:hover {
+  background-color: #475569;
+}
+
+.card-left:after {
+  content: "";
+  z-index: 5;
+  border-top: 12px solid #0000;
+  border-bottom: 12px solid #0000;
+  border-right: 12px solid #cbd5e1cc;
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 50%;
+  left: -12px;
+  transform: translateY(-50%);
+}
+.card-right:after {
+  content: "";
+  z-index: 5;
+  border-top: 12px solid #0000;
+  border-bottom: 12px solid #0000;
+  border-left: 12px solid #cbd5e1cc;
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 50%;
+  right: -12px;
+  transform: translateY(-50%);
+}
+.card-right:hover:after {
+  border-left-color: var(--color-secondary);
+}
+.card-left:hover:after {
+  border-right-color: var(--color-primary);
+}
+:where(.dark, .dark *) .card-left:after {
+  border-right-color: #33415580;
+}
+.card-right:hover:after {
+  border-left-color: var(--color-secondary);
+  transition: border-left-color var(--transition-normal) ease;
+}
+
+@media (max-width: 768px) {
+  .experience-section .relative > .absolute.right-1\/2.w-1,
+  .experience-section .relative .absolute.right-1\/2.w-6 {
+    display: none;
+  }
+  .experience-section .relative.flex.items-center {
+    flex-direction: column;
+  }
+  .experience-section .relative.flex.items-center > .w-1\/2 {
+    text-align: right !important;
+    width: 100% !important;
+    padding: 0 1rem !important;
+  }
+  .experience-section .relative.flex.items-center > .w-1\/2:empty,
+  .experience-section .relative.flex.items-center > .w-1\/2.pl-16:empty,
+  .experience-section .relative.flex.items-center > .w-1\/2.pr-8:empty,
+  .card-left:after,
+  .card-right:after {
+    display: none;
+  }
+  .card-left,
+  .card-right {
+    border-top: 3px solid var(--color-primary);
+  }
+  .experience-section .content-box > div {
+    margin-bottom: 1.5rem;
+  }
+}
