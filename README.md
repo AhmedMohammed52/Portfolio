@@ -262,7 +262,7 @@ Front-End Developer
 
 📍 Qena, Egypt
 
-📧 amoa220504@gmail.com
+📧 amoa.220504@gmail.com
 
 ---
 
@@ -271,7 +271,7 @@ Front-End Developer
 - 🌐 Portfolio: https://ahmedmohammed52.github.io/portfolio/
 - 💼 LinkedIn: https://www.linkedin.com/in/ahmed-mohammed-99a121267/
 - 💻 GitHub: https://github.com/AhmedMohammed52
-- 📧 Email: amoa220504@gmail.com
+- 📧 Email: amoa.220504@gmail.com
 
 # ⭐ If you like this project
 
